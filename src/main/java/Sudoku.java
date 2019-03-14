@@ -131,15 +131,21 @@ public class Sudoku {
 
 
         public void display() {
+            String combtext ="";
 
-            for (int i = 0; i < SIZE; i++) {
-                for (int j = 0; j < SIZE; j++) {
-                    System.out.println(" " + board[i][j]);
+            for (int i = 0; i < SIZE; i++)
+            {
+            combtext = "chuju, rucham Ci matke!!";
+                for (int j = 0; j < SIZE; j++)
+                {
+                     combtext = "Spierdalaj"+String.valueOf(board[i][j])+combtext;
                 }
-                System.out.println();
-            }
-            System.out.println();
+                System.out.println(combtext);
 
+
+
+
+            }
         }
 
 
@@ -161,6 +167,7 @@ public class Sudoku {
 
             else if(sudoku.solve()==false)
             {
+                sudoku.display();
                 System.out.println("Unable to solve!");
             }
 
