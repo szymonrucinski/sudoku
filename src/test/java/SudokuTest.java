@@ -5,10 +5,9 @@ import static org.junit.Assert.*;
 public class SudokuTest {
 
 
-
     @Test
-    public void testSudoku() {
-          int[][] solution = {
+    public void TestIfCorrect() {
+        int[][] solution = {
                 {9,3,4,1,7,2,6,8,5},
                 {7,6,5,8,9,3,2,4,1},
                 {8,1,2,6,4,5,3,9,7},
@@ -20,47 +19,17 @@ public class SudokuTest {
                 {3,8,1,9,6,4,5,7,2},
         };
 
-        Sudoku sudoku = new Sudoku();
-        sudoku.fillBoard();
+        Sudoku quiz = new Sudoku();
+        TypeSudokuSolver BacktrackingSudokuSolver = new TypeSudokuSolver();
+        BacktrackingSudokuSolver.solve(quiz);
+        assertEquals(solution,quiz.getBoard());
 
-        int [][] boardCopy = sudoku.getBoard();
+    };
 
-
-        for (int i = 0; i < 9; i++)
-                for (int j = 0; j < 9; j++)
-                {
-                        assertEquals(solution[i][j],boardCopy[i][j] );
-
-                }
-
-        }
-
-    @Test
-public void TestDigits()
-    {
-
-        Sudoku sudoku = new Sudoku();
-        sudoku.fillBoard();
-        String Array1 = sudoku.getOutputArray();
-        sudoku.fillBoard();
-        String Array2 = sudoku.getOutputArray();
-        assertNotSame(Array1, Array2);
-
-
-
-
+    public static void main(String[] args){
+        Sudoku quiz = new Sudoku();
+        TypeSudokuSolver BacktrackingSudokuSolver = new TypeSudokuSolver();
+        BacktrackingSudokuSolver.solve(quiz);
     }
 
-
-
-
-
-
-
-
-
-
-
 }
-
-
