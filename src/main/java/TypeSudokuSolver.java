@@ -1,7 +1,7 @@
-public class TypeSudokuSolver implements SudokuSolver {
+/*public class TypeSudokuSolver implements SudokuSolver {*/
 //     class ----->  name     interface--------->  name
 
-    public boolean solve(Sudoku board){
+  /*  public boolean solve(Sudoku board){
 
             for (int row = 0; row < 9; row++) {
                 for (int column = 0; column < 9; column++) {
@@ -20,14 +20,14 @@ public class TypeSudokuSolver implements SudokuSolver {
                         return false;
                     }
                 }
-            }
+            }*/
 
 
 
 
 
             //display Sudoku puzzle
-            System.out.print("     INPUT ---------------------OUTPUT");
+      /*      System.out.print("     INPUT ---------------------OUTPUT");
             System.out.println();
 
 
@@ -49,4 +49,4 @@ public class TypeSudokuSolver implements SudokuSolver {
 
 
 
-};
+};*/
