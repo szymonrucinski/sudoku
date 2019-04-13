@@ -1,7 +1,6 @@
 
-import java.util.ArrayList;
 
-public class SudokuRow {
+public class SudokuRow extends SudokuElement {
 
 
     SudokuField[] RowOfSudokuFields = new SudokuField[9];

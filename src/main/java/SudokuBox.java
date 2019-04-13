@@ -19,8 +19,22 @@ for(int i=0; i<3;i++)
 
 
     boolean verify(){
-return false;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = i + 1; j < 3; j++) {
+                for(int k=0;k<3;k++)
+                if (BoxOfSudokuFields[i][k] != null && BoxOfSudokuFields[i][k].getFieldValue()==(BoxOfSudokuFields[j][k].getFieldValue())) {
+                    return false;
+                }
+            }
+        }
+
+        // no duplicate found
+        return true;
+
+    }
+
     };
 
 
-}
+
