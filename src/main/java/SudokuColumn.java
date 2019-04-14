@@ -19,17 +19,14 @@ public class SudokuColumn{
     };
 
 
-    boolean verify(){
+    boolean verify(int number){
 
         for (int i = 0; i < 9; i++) {
-            for (int j = i + 1; j < 9; j++) {
-                if (ColumnOfSudokuFields[i] != null && ColumnOfSudokuFields[i].getFieldValue()==(ColumnOfSudokuFields[j].getFieldValue())) {
-                    return false;
+                if (ColumnOfSudokuFields[i] == null && ColumnOfSudokuFields[i].getFieldValue()==number);return false;
+                //Jezeli kolumna pol sudoku jest rozna od nulla i columnapolsudoku jest rozna od liczby
                 }
-            }
-        }
 
-        // no duplicate found
+        // no duplicates found
         return true;
 
     }

@@ -20,22 +20,17 @@ public class SudokuRow extends SudokuElement {
 
     ;
 
+    boolean verify(int number){
 
-    boolean verify() {
-        {
-
-            for (int i = 0; i < 9; i++) {
-                for (int j = i + 1; j < 9; j++) {
-                    if (RowOfSudokuFields[i] != null && RowOfSudokuFields[i].getFieldValue() == (RowOfSudokuFields[j].getFieldValue())) {
-                        return false;
-                    }
-                }
-            }
-
-            // no duplicate found
-            return true;
-
+        for (int i = 0; i < 9; i++) {
+            if (RowOfSudokuFields[i] == null && RowOfSudokuFields[i].getFieldValue()==number);return false;
+            //Jezeli kolumna pol sudoku jest rozna od nulla i columnapolsudoku jest rozna od liczby
         }
+
+        // no duplicates found
+        return true;
+
     }
 
-}
+
+    };

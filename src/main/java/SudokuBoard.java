@@ -1,107 +1,114 @@
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class SudokuBoard {
 
-    SudokuField[][] board = new SudokuField[9][9];                     //2D array of Sudoku fields
-    SudokuRow[] rowsOfSudokuFields = new SudokuRow[9];                  //Array of Sudoku fields representing row
-    SudokuColumn[] columnsOfSudokuFields = new SudokuColumn[9];         //Array of Sudoku fields representing column
-    SudokuBox[] boxesOfSudokufields = new SudokuBox[9];                 //2D array of Sudoku fields representing BOXES
+                        //LISTS
+    public ArrayList<ArrayList<SudokuField>> ListOfSudokuFields = new ArrayList<ArrayList<SudokuField>>();
+    public ArrayList<SudokuColumn> ListOfSudokuColumn = new ArrayList<SudokuColumn>();
+    public ArrayList<SudokuRow> ListOfSudokuRows = new ArrayList<SudokuRow>();
+    public ArrayList<SudokuBox>  ListOfSudokuBoxes = new ArrayList<SudokuBox>();
 
 
-    public ArrayList<SudokuField> ListOfSudokuColumn = new ArrayList<SudokuField>();
-    public ArrayList<SudokuField> ListOfSudokuRows = new ArrayList<SudokuField>();
-    public ArrayList<SudokuField> ListOfSudokuFields = new ArrayList<SudokuField>();
-
-
-    public SudokuBoard(int[][] BoardtoSolve) {                          //constructor that assigns copied values from table to objects
+            //constructor that assigns copied values from table to objects
+    public SudokuBoard(int[][] BoardtoSolve) {
         //counter used late to link 3x3 box index
         int counter = 0;
 
         for (int i = 0; i < 9; i++) {
-            rowsOfSudokuFields[i] = new SudokuRow();
-            columnsOfSudokuFields[i] = new SudokuColumn();
-            boxesOfSudokufields[i] = new SudokuBox();
+
+
+
+
+            ListOfSudokuColumn.add(new SudokuColumn());
+            ListOfSudokuFields.add(new ArrayList<SudokuField>()); //LINK LIST
+            ListOfSudokuRows.add(new SudokuRow());
+            ListOfSudokuBoxes.add(new SudokuBox());
+
+
 
             for (int j = 0; j < 9; j++) {
 
-                board[i][j] = new SudokuField();
-                board[i][j].setFieldValue(BoardtoSolve[i][j]);           //assign Matrix from main to object
-                rowsOfSudokuFields[i].setRow(j, board[i][j]);            //rows
+                    ListOfSudokuFields.get(i).add(new SudokuField());
+                    ListOfSudokuFields.get(i).get(j).setFieldValue(BoardtoSolve[i][j]);
+                    ListOfSudokuRows.get(i).setRow(j,ListOfSudokuFields.get(i).get(j));
 
 
-                ListOfSudokuFields.add(new SudokuField());
-                
-
-
-
-
-                ListOfSudokuRows.add(board[i][j]);      //add Row to lisit
 
                 //assign BOX
-                if (j % 3 == 2 && i < 9 && i % 3 == 2) {                  //fancy way of creating 3x3 objects
-                    //we want to get every last element in the 3x3 grid
-                    // Then we decrement indexes to get them back (We have got for example 2:2 -> 2:1 -> 2:0 -> 1:2 -> 1:1 -> 1:0
 
-                    for (int k = j; k >= j - 2; k--) {
-                        for (int l = i; l >= i - 2; l--) {
-                            boxesOfSudokufields[(counter / 3) % 9].setBoxOfSudokuFields(l % 3, k % 3, board[k][l]);           //linking boards with counter and translating board indexes into grid indexes
-
-                        }
-                        counter++;       //counter
 
                     }
                 }
+                for(int j =0;  j<9; j++) {
+            for(int i=0;i<9;i++) {
+                if (j % 3 == 2 && i < 9 && i % 3 == 2)                        //fancy way of creating 3x3 objects
+                {                                    //we want to get every last element in the 3x3 grid
+                    //Then we decrement indexes to get them back (We have got for example 2:2 -> 2:1 -> 2:0 -> 1:2 -> 1:1 -> 1:0
+
+                    for (int k = j; k >= j - 2; k--) {
+
+                        for (int l = i; l >= i - 2; l--) {
+                            //linking boards with counter and translating board indexes into grid indexes
+                            ListOfSudokuBoxes.get((counter / 3) % 9).setBoxOfSudokuFields(l % 3, k % 3, ListOfSudokuFields.get(k).get(l));
+
+                        }
+                        counter++;
+                    }
+                }
             }
-        }
-
-        for(int v=0;v<9;v++){
-            assigncolumn(v);
+}
+assigncolumn();
 
         }
-    }
+
+    void assigncolumn() {
+
+        for(int k=0;k<9;k++) {
+            for (int l = 0; l < 9; l++) {
+                    ListOfSudokuColumn.get(k).setColumn(l, ListOfSudokuFields.get(l).get(k));
+
+                }
+            }
 
 
-    void assigncolumn(int x) {
-        for (int h = 0; h < 9; h++) {
-            columnsOfSudokuFields[x].setColumn(h, board[h][x]);
-            ListOfSudokuColumn.add(board[h][x]);
-
-        }
-    }
+}
 
     void getColumn(int whichOne) {
-       columnsOfSudokuFields[whichOne].show();
+       ListOfSudokuColumn.get(whichOne);
     }
 
     SudokuRow getRow(int whichOne) {
-        return rowsOfSudokuFields[whichOne];
+        return ListOfSudokuRows.get(whichOne);
     }
 
     SudokuBox getBox(int whichOne) {
-        return boxesOfSudokufields[whichOne];
+        return ListOfSudokuBoxes.get(whichOne);
     }
 
-    private boolean checkBoard() {
+    private boolean checkBoard(int i,int number) {
         boolean verdict = true;
-        for(int i =0;i<9;i++) {
-             verdict=(rowsOfSudokuFields[i].verify() && columnsOfSudokuFields[i].verify() && boxesOfSudokufields[i].verify() );
-             if(verdict==false){ System.out.println("Sudokboard does not meet game requirements.");return false;}
-        }
-        System.out.println("Sudokboard meets game requirements.");
+             verdict=(ListOfSudokuRows.get(i).verify(number) && ListOfSudokuColumn.get(i).verify(number) && ListOfSudokuBoxes.get(i).verify(number) );
+             //v
+             if(verdict==false){return false;}
+
 return verdict;
     }
 
     boolean getcheckBoard(){
-        return checkBoard();
-    }
+        boolean getcheck = true;
+
+        for(int i =0;i<9;i++)
+        {
+            getcheck=getcheck&&checkBoard(i,i);
+        }
+        return getcheck;
+    };
+
+
 
 
 /////////////////////////////////////////////////////////// CheckBoard
 
-
-
-
-
 };
-
