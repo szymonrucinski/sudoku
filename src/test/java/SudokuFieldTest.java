@@ -5,10 +5,10 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotSame;
 
 
-class SudokuFieldTest {
+public class SudokuFieldTest {
 
     @Test
-    void setFieldValue() {
+    public   void setFieldValue() {
         SudokuField sudokuField = new SudokuField();
         sudokuField.setFieldValue(5);
         assertEquals(5, sudokuField.getFieldValue());
@@ -16,14 +16,14 @@ class SudokuFieldTest {
     }
 
     @Test
-    void getFieldValue() {
+    public    void getFieldValue() {
         SudokuField sudokuField = new SudokuField();
         sudokuField.setFieldValue(5);
         assertEquals(5, sudokuField.getFieldValue());
     }
 
     @Test
-    void checkOverrideEquals()
+    public  void checkOverrideEquals()
     {
         SudokuField sudokuField = new SudokuField();
         sudokuField.setFieldValue(5);
@@ -33,7 +33,7 @@ class SudokuFieldTest {
     }
 
     @Test
-    void checkOverrideEqualsWrong()
+    public  void checkOverrideEqualsWrong()
     {
         SudokuField sudokuField = new SudokuField();
         sudokuField.setFieldValue(5);
@@ -43,7 +43,7 @@ class SudokuFieldTest {
     }
 
     @Test
-    void checkOverrideEqualsTheSame()
+    public   void checkOverrideEqualsTheSame()
     {
         SudokuField sudokuField = new SudokuField();
         sudokuField.setFieldValue(5);
@@ -51,7 +51,7 @@ class SudokuFieldTest {
     }
 
     @Test
-    void checkToString()
+    public  void checkToString()
     {
         SudokuField sudokuField = new SudokuField();
         System.out.println(sudokuField.toString());

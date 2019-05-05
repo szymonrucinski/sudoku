@@ -8,16 +8,16 @@ import static junit.framework.TestCase.assertFalse;
 
 
 
-class SudokuBoardTest
+public class SudokuBoardTest
 {
 
-    SudokuBoardTest()
+    public void SudokuBoardTest()
     {
 
     }
 
     @Test
-    void testFillWith0()
+    public  void testFillWith0()
     {
         SudokuBoard sudoku = new SudokuBoard();
         assertEquals(0,sudoku.get(0,0));
@@ -26,7 +26,7 @@ class SudokuBoardTest
 
     @Test
 
-    void testGetBoard()
+    public void testGetBoard()
     {
         SudokuBoard sudoku = new SudokuBoard();
 
@@ -72,7 +72,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void testGetColumn()
+    public    void testGetColumn()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -87,7 +87,7 @@ class SudokuBoardTest
         assertTrue(sudoku.getColumn(0).verify());
     }
     @Test
-    void testGetColumnWrong()
+    public void testGetColumnWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -103,7 +103,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void testGetRow()
+    public  void testGetRow()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -122,7 +122,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void testGetRowWrong()
+    public  void testGetRowWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -139,7 +139,7 @@ class SudokuBoardTest
 
 
     @Test
-    void testGetBox()
+    public  void testGetBox()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -169,7 +169,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void testGetBoxWrong()
+    public  void testGetBoxWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -197,7 +197,7 @@ class SudokuBoardTest
 
 
     @Test
-    void testVerify()
+    public  void testVerify()
     {
         SudokuBoard sudoku = new SudokuBoard();
 //box
@@ -233,7 +233,7 @@ class SudokuBoardTest
 
 
     @Test
-    void testVerifyWrong()
+    public  void testVerifyWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         //box
@@ -265,7 +265,7 @@ class SudokuBoardTest
     }
 
     @Test
-     void testVerifyWith0()
+    public   void testVerifyWith0()
     {
         SudokuBoard sudoku = new SudokuBoard();
         //box
@@ -299,7 +299,7 @@ class SudokuBoardTest
         assertTrue(sudoku.verify(8, 8));
     }
     @Test
-    void testVerifyOnlyWith0() {
+    public void testVerifyOnlyWith0() {
         SudokuBoard sudoku = new SudokuBoard();
         assertTrue(sudoku.verify(0, 0));
         assertTrue(sudoku.verify(2, 3));
@@ -311,7 +311,7 @@ class SudokuBoardTest
 
 
     @Test
-    void testCheckBoard()
+    public  void testCheckBoard()
     {
         SudokuBoard sudoku = new SudokuBoard();
         //box
@@ -344,7 +344,7 @@ class SudokuBoardTest
 
 
     @Test
-    void testCheckBoardWrong()
+    public  void testCheckBoardWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         //box
@@ -376,7 +376,7 @@ class SudokuBoardTest
     }
 
     @Test
-     void testCheckBoardWith0()
+    public void testCheckBoardWith0()
     {
         SudokuBoard sudoku = new SudokuBoard();
         //box
@@ -407,7 +407,7 @@ class SudokuBoardTest
         assertTrue(sudoku.checkBoard());
     }
     @Test
-     void testDisplay() {
+    public void testDisplay() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -423,7 +423,7 @@ class SudokuBoardTest
 
 
     @Test
-    void checkOverrideEquals()
+    public void checkOverrideEquals()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -452,7 +452,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void checkOverrideEqualsWrong()
+    public void checkOverrideEqualsWrong()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -480,7 +480,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void checkOverrideEqualsTheSame()
+    public void checkOverrideEqualsTheSame()
     {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
@@ -496,7 +496,7 @@ class SudokuBoardTest
     }
 
     @Test
-    void checkToString()
+    public void checkToString()
     {
         SudokuBoard sudoku = new SudokuBoard();
         System.out.println(sudoku.toString());
