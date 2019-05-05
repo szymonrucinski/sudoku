@@ -1,114 +1,159 @@
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
 
-public class SudokuBoard {
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
-                        //LISTS
-    public ArrayList<ArrayList<SudokuField>> ListOfSudokuFields = new ArrayList<ArrayList<SudokuField>>();
-    public ArrayList<SudokuColumn> ListOfSudokuColumn = new ArrayList<SudokuColumn>();
-    public ArrayList<SudokuRow> ListOfSudokuRows = new ArrayList<SudokuRow>();
-    public ArrayList<SudokuBox>  ListOfSudokuBoxes = new ArrayList<SudokuBox>();
+import java.io.*;
+import java.util.Arrays;
+import java.util.List;
 
+public class SudokuBoard implements Cloneable, Serializable {
+    public static final int SIZE = 9;
+    private List<SudokuField> board;
+    private List<SudokuBox> boxes;
+    private List<SudokuColumn> columns;
+    private List<SudokuRow> rows;
 
-            //constructor that assigns copied values from table to objects
-    public SudokuBoard(int[][] BoardtoSolve) {
-        //counter used late to link 3x3 box index
-        int counter = 0;
+    public SudokuBoard() {
+        SudokuField[] sboard = new SudokuField[81];
+        SudokuBox[] sboxes = new SudokuBox[9];
+        SudokuColumn[] scolumns = new SudokuColumn[9];
+        SudokuRow[] srows = new SudokuRow[9];
 
+        for (int i = 0; i < 81; i++) {
+            sboard[i] = new SudokuField();
+        }
+
+        for (int x = 0; x < 9; x++) {
+            srows[x] = new SudokuRow();
+            scolumns[x] = new SudokuColumn();
+            for (int y = 0; y < 9; y++) {
+                srows[x].addField(sboard[x * SIZE + y]);
+                scolumns[x].addField(sboard[x + y * SIZE]);
+            }
+        }
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                sboxes[i * 3 + j] = new SudokuBox();
+                for (int x = 0; x < 3; x++) {
+                    for (int y = 0; y < 3; y++) {
+                        sboxes[i * 3 + j].addField(sboard[(i * 27) + (j * 3) + (x * 9 + y)]);
+                    }
+                }
+            }
+
+        }
+        columns = Arrays.asList(scolumns);
+        rows = Arrays.asList(srows);
+        boxes = Arrays.asList(sboxes);
+        board = Arrays.asList(sboard);
+    }
+
+    @Override
+    public String toString() {
+        ToStringBuilder s = new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE);
+        for (int i = 0; i < board.size(); i++) {
+            s.append(board.get(i));
+        }
+        return s.toString();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj == this) {
+            return true;
+        }
+        if (obj.getClass() != getClass()) {
+            return false;
+        }
+        SudokuBoard ob = (SudokuBoard) obj;
+        EqualsBuilder e = new EqualsBuilder();
+        for (int i = 0; i < board.size(); i++) {
+            e.append(this.board.get(i), ob.board.get(i));
+        }
+        return e.isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        HashCodeBuilder hs = new HashCodeBuilder(17, 37);
+        for (SudokuField sudokuField : board) {
+            hs.append(sudokuField);
+        }
+        return hs.toHashCode();
+    }
+
+    public int get(int x, int y) {
+        return board.get(x * SIZE + y).getFieldValue();
+    }
+
+    public void set(int x, int y, int value) {
+        board.get(x * SIZE + y).setFieldValue(value);
+    }
+
+    public SudokuRow getRow(int y) {
+        return rows.get(y);
+    }
+
+    public SudokuColumn getColumn(int x) {
+        return columns.get(x);
+    }
+
+    public SudokuBox getBox(int x, int y) {
+        return boxes.get(x / 3 * 3 + y / 3);
+    }
+
+    public boolean verify(int row, int col) {
+        return rows.get(row).verify() && columns.get(col).verify() && boxes.get(row / 3 * 3 + col / 3).verify();
+    }
+
+    public boolean checkBoard() {
         for (int i = 0; i < 9; i++) {
+            if (!rows.get(i).verify() || !columns.get(i).verify() || !boxes.get(i).verify()) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-
-
-
-            ListOfSudokuColumn.add(new SudokuColumn());
-            ListOfSudokuFields.add(new ArrayList<SudokuField>()); //LINK LIST
-            ListOfSudokuRows.add(new SudokuRow());
-            ListOfSudokuBoxes.add(new SudokuBox());
-
-
-
+    public void display() {
+        for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-
-                    ListOfSudokuFields.get(i).add(new SudokuField());
-                    ListOfSudokuFields.get(i).get(j).setFieldValue(BoardtoSolve[i][j]);
-                    ListOfSudokuRows.get(i).setRow(j,ListOfSudokuFields.get(i).get(j));
-
-
-
-                //assign BOX
-
-
-                    }
-                }
-                for(int j =0;  j<9; j++) {
-            for(int i=0;i<9;i++) {
-                if (j % 3 == 2 && i < 9 && i % 3 == 2)                        //fancy way of creating 3x3 objects
-                {                                    //we want to get every last element in the 3x3 grid
-                    //Then we decrement indexes to get them back (We have got for example 2:2 -> 2:1 -> 2:0 -> 1:2 -> 1:1 -> 1:0
-
-                    for (int k = j; k >= j - 2; k--) {
-
-                        for (int l = i; l >= i - 2; l--) {
-                            //linking boards with counter and translating board indexes into grid indexes
-                            ListOfSudokuBoxes.get((counter / 3) % 9).setBoxOfSudokuFields(l % 3, k % 3, ListOfSudokuFields.get(k).get(l));
-
-                        }
-                        counter++;
-                    }
-                }
+                System.out.print(board.get(i * SIZE + j).getFieldValue());
+                System.out.print(" ");
             }
-}
-assigncolumn();
+            System.out.printf("%n");
+        }
+    }
 
+
+    @Override
+    public SudokuBoard clone() throws CloneNotSupportedException {
+
+        byte[] object;
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
+             ObjectOutputStream oos = new ObjectOutputStream(baos);) {
+            oos.writeObject(this);
+            object = baos.toByteArray();
+
+        } catch (IOException ioe) {
+            System.out.println(ioe);
+            return null;
         }
 
-    void assigncolumn() {
+        try (ByteArrayInputStream bais = new ByteArrayInputStream(object);
+             ObjectInputStream ois = new ObjectInputStream(bais);) {
 
-        for(int k=0;k<9;k++) {
-            for (int l = 0; l < 9; l++) {
-                    ListOfSudokuColumn.get(k).setColumn(l, ListOfSudokuFields.get(l).get(k));
-
-                }
-            }
-
-
-}
-
-    void getColumn(int whichOne) {
-       ListOfSudokuColumn.get(whichOne);
-    }
-
-    SudokuRow getRow(int whichOne) {
-        return ListOfSudokuRows.get(whichOne);
-    }
-
-    SudokuBox getBox(int whichOne) {
-        return ListOfSudokuBoxes.get(whichOne);
-    }
-
-    private boolean checkBoard(int i,int number) {
-        boolean verdict = true;
-             verdict=(ListOfSudokuRows.get(i).verify(number) && ListOfSudokuColumn.get(i).verify(number) && ListOfSudokuBoxes.get(i).verify(number) );
-             //v
-             if(verdict==false){return false;}
-
-return verdict;
-    }
-
-    boolean getcheckBoard(){
-        boolean getcheck = true;
-
-        for(int i =0;i<9;i++)
-        {
-            getcheck=getcheck&&checkBoard(i,i);
+            SudokuBoard clone = (SudokuBoard) ois.readObject();
+            return (SudokuBoard) clone;
+        } catch (IOException | ClassNotFoundException cnfe) {
+            System.out.println(cnfe);
+            return null;
         }
-        return getcheck;
-    };
-
-
-
-
-/////////////////////////////////////////////////////////// CheckBoard
-
-};
+    }
+}
