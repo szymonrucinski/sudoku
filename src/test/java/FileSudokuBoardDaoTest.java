@@ -22,6 +22,12 @@ public class FileSudokuBoardDaoTest {
         SudokuBoard sudokuBoard1 = new SudokuBoard();
         sudokuBoard1 = fileSudokuBoardDao.read();
 
+        sudokuBoard1.display();
+
+        assertEquals(true,sudokuBoard1.equals(sudokuBoard));
+
+
+
 
     }
 
