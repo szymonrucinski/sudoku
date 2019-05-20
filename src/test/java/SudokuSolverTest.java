@@ -1,8 +1,0 @@
-class SudokuSolverTest {
-    public SudokuSolverTest() {
-
-    }
-
-
-}
-
