@@ -2,73 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SudokuGameProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/View.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackTrackingSudokuSolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileSudokuBoardDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuBoardDaoFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuColumn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuRow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuSolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Verifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BackTrackingSudokuSolverTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FileSudokuBoardDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SudokuBoardTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SudokuFieldTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SudokuSolverTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VerifierTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackTrackingSudokuSolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileSudokuBoardDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuBoardDaoFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SudokuSolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Verifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java2-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/BackTrackingSudokuSolverTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FileSudokuBoardDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SudokuBoardTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SudokuFieldTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-BackTrackingSudokuSolverTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FileSudokuBoardDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-SudokuBoardTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-SudokuFieldTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-VerifierTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/VerifierTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BackTrackingSudokuSolverTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FileSudokuBoardDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SudokuBoardTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SudokuFieldTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SudokuSolverTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/VerifierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/View.iml" beforeDir="false" afterPath="$PROJECT_DIR$/View/View.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/gui/App.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
@@ -84,8 +20,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +45,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/FileSudokuBoardDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/FileSudokuBoardDaoTest.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/gui/App.java" />
       </list>
     </option>
   </component>
@@ -120,7 +60,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -134,62 +73,23 @@
               <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558378853869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558521407944" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RunDashboard">
@@ -262,6 +162,7 @@
       <updated>1557134477140</updated>
       <workItem from="1557134481817" duration="2378000" />
       <workItem from="1558378694361" duration="160000" />
+      <workItem from="1558521072987" duration="334000" />
     </task>
     <servers />
   </component>
@@ -283,13 +184,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2538000" />
+    <option name="totallyTimeSpent" value="2872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25277779" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -298,7 +199,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28511822" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2837838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,17 +238,92 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/FileSudokuBoardDaoTest.java" />
     <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>java</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>View</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.13-beta-2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

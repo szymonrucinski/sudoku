@@ -1,4 +1,6 @@
 package gui;
+import comprog.SudokuBoard;
+
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -11,6 +13,8 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("My First JavaFX App");
 
+
+        SudokuBoard Sudoku = new SudokuBoard();
         Label label = new Label("Twoja Mama!");
         Scene scene = new Scene(label, 400, 200);
         primaryStage.setScene(scene);
