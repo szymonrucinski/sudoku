@@ -52,19 +52,11 @@ public class SudokuField implements Cloneable, Serializable, Comparable<SudokuFi
         return value;
     }
 
-    private static Object deepCopy(Object object) {
-        try {
-            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-            ObjectOutputStream outputStrm = new ObjectOutputStream(outputStream);
-            outputStrm.writeObject(object);
-            ByteArrayInputStream inputStream = new ByteArrayInputStream(outputStream.toByteArray());
-            ObjectInputStream objInputStream = new ObjectInputStream(inputStream);
-            return objInputStream.readObject();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+    @Override
+    public SudokuField clone() throws CloneNotSupportedException {
+        SudokuField clone = (SudokuField) super.clone();
+        clone.value = this.value;
+        return clone;
     }
 
     @Override

@@ -178,7 +178,7 @@ public class SudokuBoardTest
         sudoku.set(0, 1, 2);
         sudoku.set(0, 2, 3);
         sudoku.set(1, 0, 4);
-        sudoku.set(1, 1, 9);//<-- MISTAKE 9 insted of 5
+        sudoku.set(1, 1, 9);
         sudoku.set(1, 2, 6);
         sudoku.set(2, 0, 7);
         sudoku.set(2, 1, 8);
@@ -189,7 +189,7 @@ public class SudokuBoardTest
         sudoku.set(6, 7, 2);
         sudoku.set(6, 8, 3);
         sudoku.set(7, 6, 4);
-        sudoku.set(7, 7, 9); //<-- MISTAKE 9 insted of 5
+        sudoku.set(7, 7, 9);
         sudoku.set(7, 8, 6);
         sudoku.set(8, 6, 7);
         sudoku.set(8, 7, 8);
@@ -256,7 +256,7 @@ public class SudokuBoardTest
         sudoku.set(0, 7, 8);
         sudoku.set(0, 8, 9);
         //row
-        sudoku.set(3, 0, 4); //<-- mistake, should be 2
+        sudoku.set(3, 0, 4);
         sudoku.set(4, 0, 5);
         sudoku.set(5, 0, 6);
         sudoku.set(6, 0, 3);
@@ -367,7 +367,7 @@ public class SudokuBoardTest
         sudoku.set(0, 7, 8);
         sudoku.set(0, 8, 9);
         //row
-        sudoku.set(3, 0, 4); //<-- mistake, should be 2
+        sudoku.set(3, 0, 4);
         sudoku.set(4, 0, 5);
         sudoku.set(5, 0, 6);
         sudoku.set(6, 0, 3);

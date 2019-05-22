@@ -69,28 +69,26 @@ public class Verifier implements Cloneable, Serializable {
     }
 
     @Override
-    public Verifier clone() throws CloneNotSupportedException {
-
+    public Object clone() {
         byte[] object;
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
-             ObjectOutputStream oos = new ObjectOutputStream(baos);) {
+             ObjectOutputStream oos = new ObjectOutputStream(baos)) {
             oos.writeObject(this);
             object = baos.toByteArray();
-
         } catch (IOException ioe) {
-            System.out.println(ioe);
+            ioe.printStackTrace();
             return null;
         }
 
         try (ByteArrayInputStream bais = new ByteArrayInputStream(object);
              ObjectInputStream ois = new ObjectInputStream(bais);) {
 
-            Verifier clone = (Verifier) ois.readObject();
-            return (Verifier) clone;
+            return ois.readObject();
         } catch (IOException | ClassNotFoundException cnfe) {
-            System.out.println(cnfe);
+            cnfe.printStackTrace();
             return null;
         }
+
     }
 
 }
