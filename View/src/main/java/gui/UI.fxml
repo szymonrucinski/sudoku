@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UIcontroller">
+   <children>
+      <BorderPane layoutX="380.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <ColorPicker BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <ChoiceBox layoutX="31.0" layoutY="24.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="58.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="91.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="124.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="161.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="195.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="228.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="261.0" prefHeight="27.0" prefWidth="42.0" />
+      <ChoiceBox layoutX="31.0" layoutY="299.0" prefHeight="27.0" prefWidth="42.0" />
+   </children>
+</AnchorPane>
