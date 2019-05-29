@@ -23,9 +23,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import javafx.scene.effect.DropShadow;
-
-
-import static com.sun.javafx.scene.control.skin.Utils.getResource;
+//--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media
 
 
 public class Main extends Application
