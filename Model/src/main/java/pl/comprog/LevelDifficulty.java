@@ -4,6 +4,7 @@ public class LevelDifficulty {
     public SudokuBoard selectLevel(SudokuBoard sudoku,int level){
         int amount=20*level;
         switch(level){
+            case 4: sudoku=LoadSave(sudoku);
             case 1: RemoveRandomNumbers(amount,sudoku);
             case 2: RemoveRandomNumbers(amount,sudoku);
             case 0: RemoveRandomNumbers(amount,sudoku);
@@ -29,6 +30,12 @@ public class LevelDifficulty {
         }
         return  sudoku;
 
+    }
+
+    private SudokuBoard LoadSave(SudokuBoard sudoku){
+        System.out.println("LOAD SAVE");
+        sudoku.display();
+        return  sudoku;
     }
 
 

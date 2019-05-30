@@ -27,9 +27,6 @@ public class FileSudokuBoardDaoTest {
 
         assertEquals(true,sudokuBoard1.equals(sudokuBoard));
 
-
-
-
     }
 
 

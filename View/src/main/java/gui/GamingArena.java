@@ -10,14 +10,6 @@ import javafx.scene.layout.StackPane;
 import pl.comprog.BackTrackingSudokuSolver;
 import pl.comprog.LevelDifficulty;
 import pl.comprog.SudokuBoard;
-//import pl.compprog.EasyDifficulty;
-
-import java.awt.*;
-import java.util.Optional;
-import java.util.OptionalInt;
-
-
-
 
 
 public class GamingArena
@@ -34,9 +26,10 @@ public class GamingArena
         return result;
     }
 
-    public static Scene GamingScene(int level)
+    public static Scene GamingScene(SudokuBoard sudoku,int level)
     {
-        SudokuBoard sudoku = new SudokuBoard();
+        sudoku.display();
+
         BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
         solver.solve(sudoku);
         SudokuBoard solution = (SudokuBoard) sudoku.clone();
@@ -75,7 +68,6 @@ public class GamingArena
 
         //Checking if correct();
         Button checkCorrect = new Button();
-        //checkCorrect.setOnAction(e->);
 
 
 
