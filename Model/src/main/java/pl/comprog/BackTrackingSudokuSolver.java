@@ -18,40 +18,6 @@ public class BackTrackingSudokuSolver implements SudokuSolver {
     }
 
 
-    /*   public boolean setDifficulty(SudokuBoard sudokuBoard,int difficulty) {
-        BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
-
-
-        switch (difficulty) {
-            case 1:
-            case 2:
-            case 3:
-        }
-    }*/
-
-
-
- /*   public SudokuBoard removeSudokuCells (SudokuBoard sudokuBoard, int difficulty)
-    {
-
-
-        Random rand = new Random();
-        int amount = difficulty*20;
-
-        for (int i = 0; i < amount; i++) {
-            int index = rand.nextInt(80);
-
-
-        }
-
-
-    }*/
-
-
-
-
-
-
     public boolean solve(SudokuBoard sudokuBoard) {
         for (int row = 0; row < SIZE; row++) {
             for (int col = 0; col < SIZE; col++) {

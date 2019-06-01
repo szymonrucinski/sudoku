@@ -49,7 +49,7 @@ public class Main extends Application
 
     Boolean loadedSave =false;
 
-    SudokuBoard loaded = new SudokuBoard();
+    SudokuBoard Random = new SudokuBoard();
 
 
     // LangController language = new LangController();
@@ -99,7 +99,7 @@ public class Main extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
-
+        //MENU DESIGN//
         boolean IsEnglish= true;
         Pane layout = new Pane();
         layout.setPrefSize(400,400);
@@ -129,14 +129,13 @@ public class Main extends Application
         menuText.setEffect(dropShadow);
         menuText.setCache(true);
 
-        //Difficulty Level
-
+        //Buttons
         b2 = new Button();
         //language.Polish(b2,"b2");
         b2.setText(bundlePL.getString("b2"));
         b2.setLayoutX(40);
         b2.setLayoutY(100);
-        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene( board,0)));  //Lambda Expression (e = events, code after '->' operator)
+        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene( Random,0,stage,menu)));  //Lambda Expression (e = events, code after '->' operator)
 
         b3 = new Button();
         //language.Polish(b3,"b3");
@@ -144,7 +143,7 @@ public class Main extends Application
 
         b3.setLayoutX(100);
         b3.setLayoutY(100);
-        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(board,1)));
+        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(Random,1,stage,menu)));
 
         b4 = new Button();
         b4.setText(bundlePL.getString("b4"));
@@ -152,7 +151,7 @@ public class Main extends Application
         //language.Polish(b4,"b4");
         b4.setLayoutX(180);
         b4.setLayoutY(100);
-        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(board,2)));
+        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(Random,2,stage,menu)));
 
         b5 = new Button();
         //language.Polish(b5,"b5");
@@ -176,8 +175,9 @@ public class Main extends Application
         b7.setText("LoadGame");
         b7.setLayoutX(180);
         b7.setLayoutY(220);
-        if(loadedSave==false) {b7.setText("Run Saved Game");board=startLoaded(board);System.out.println("tEST1");board.display();System.out.println("tEST2");
-        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(board, 4)));};
+        if(loadedSave==false) {b7.setText("Run Saved Game");board=startLoaded(board);System.out.println("tEST1");board.display();System.out.println("tEST2");}
+        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(board, 4,stage,menu)));
+
 
 
 /*
@@ -193,10 +193,8 @@ public class Main extends Application
 
 
         {
-            //stage.setScene(Hard.hardScene());
             Button back = new Button("Back");
             back.setOnAction(f -> stage.setScene(menu));
-            //Add button to the hardScene
         };
 
         layout.getChildren().addAll(b2, b3, b4,menuText,b5,b6,b7);
@@ -215,10 +213,7 @@ public class Main extends Application
         FadeTransition ft = new FadeTransition(Duration.millis(8000), menuText);
         ft.setFromValue(0.0);
         ft.setToValue(1.0);
-
         ft.play();
-
-
         stage.setScene(menu);
         stage.show();
     }

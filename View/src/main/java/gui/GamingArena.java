@@ -1,82 +1,88 @@
 package gui;
 import javafx.collections.ObservableList;
+import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
 import pl.comprog.BackTrackingSudokuSolver;
 import pl.comprog.LevelDifficulty;
 import pl.comprog.SudokuBoard;
 
+import static javafx.scene.input.KeyCode.T;
+
 
 public class GamingArena
 {
-    public Node getNodeByRowColumnIndex( int row, int column,GridPane grid) {
-        Node result = null;
-        ObservableList<Node> childrens = grid.getChildren();
-        for(Node node : childrens) {
-            if(grid.getRowIndex(node) == row && grid.getColumnIndex(node) == column) {
-                result = node;
-                break;
-            }
-        }
-        return result;
-    }
 
-    public static Scene GamingScene(SudokuBoard sudoku,int level)
+
+    public static Scene GamingScene(SudokuBoard sudoku, int level, Stage stage, Scene menu)
     {
-        sudoku.display();
+        //Instantiating the BorderPane class
+        BorderPane root = new BorderPane();
+        root.setBottom(new TextField("Bottom"));
+        root.setCenter(new TextField("Center"));
 
+
+
+        stage.setTitle("Solve Sudoku");
+
+        //Buttons
+
+        Button verifyButton = new Button("Verify");
+        Button homebutton = new Button("Go Back");
+        Pane controls = new Pane();
+        verifyButton.setLayoutX(200);
+        homebutton.setLayoutX(280);
+
+
+        controls.getChildren().addAll(homebutton,verifyButton);
+
+
+
+
+        //Sudoku setup
         BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
         solver.solve(sudoku);
         SudokuBoard solution = (SudokuBoard) sudoku.clone();
+            LevelDifficulty lvd = new LevelDifficulty();
+            lvd.selectLevel(sudoku, level);
 
-        solution.display();
-        LevelDifficulty lvd = new LevelDifficulty();
-        lvd.selectLevel(sudoku,level);
 
-        Button button = new Button("Go Back");
+        //Grid of boxes
         GridPane grid = new GridPane();
-        grid.setPadding(new Insets(40, 40, 40, 40));
+        grid.setPadding(new Insets(20, 20, 20, 20));
 
-        TextField textField = new TextField();
-
-        grid.add(textField, 9, 9);
-
+       // grid.add(textField, 9, 9);
         for (int i = 0; i < 9; i++)
         {
             for (int j = 0; j < 9; j++)
             {
-             grid.add(new javafx.scene.control.TextField("" + sudoku.get(j,i)), i, j);
+             grid.add(inputBox.createBox(i,j,sudoku.get(i,j)), i, j);
+
             }
         }
 
-        Scene easy = new Scene(grid, 400, 400);
+      root.setCenter(grid);
+      root.setBottom(controls);
+      homebutton.setOnAction(e -> stage.setScene(menu));
+      verifyButton.setOnAction(e -> validate(solution,grid));
 
 
 
+        Scene GamingArena = new Scene(root, 400, 400);
 
-
-
-
-
-
-
-
-        //Checking if correct();
-        Button checkCorrect = new Button();
-
-
-
-
-
-        return easy;
+        return GamingArena;
     }
 
+static boolean validate(SudokuBoard solution,GridPane grid)
+{
 
+}
 
 
 }
