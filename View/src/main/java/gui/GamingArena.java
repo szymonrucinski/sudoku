@@ -1,10 +1,6 @@
+//Packages and import
 package gui;
-import javafx.beans.binding.Bindings;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
-import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.geometry.Insets;
@@ -14,41 +10,47 @@ import javafx.scene.control.TextFormatter;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import javafx.util.converter.NumberStringConverter;
 import pl.comprog.BackTrackingSudokuSolver;
 import pl.comprog.FileSudokuBoardDao;
 import pl.comprog.LevelDifficulty;
 import pl.comprog.SudokuBoard;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-
-import static javafx.scene.input.KeyCode.T;
 
 
 public class GamingArena
 {
 
 
-
-    public static Scene GamingScene(SudokuBoard sudoku, int level, Stage stage, Scene menu,boolean IsEnglish) {
+    public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu,boolean IsEnglish) {
 
         ResourceBundle bundlePL = ResourceBundle.getBundle("gui.LanguagePack");
         ResourceBundle bundleEN = ResourceBundle.getBundle("gui.LanguagePackPL");
 
+
+        SudokuBoard solution = Getsolution(sudokuPassed);
+         SudokuBoard sudoku = (SudokuBoard)solution.clone();
+
+
+
         //Sudoku setup
-        BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
-        solver.solve(sudoku);
-        SudokuBoard solution = (SudokuBoard) sudoku.clone();
-        LevelDifficulty lvd = new LevelDifficulty();
-        lvd.selectLevel(sudoku, level);
+
+            LevelDifficulty lvd = new LevelDifficulty();
+            if(level!=4)lvd.selectLevel(sudoku, level);
+            if(level==4)lvd.selectLevel(sudokuPassed, level);
+
+
+        System.out.println("SOLUTION.DISPLAY");
+            solution.display();
+        System.out.println("sudoku.DISPLAY");
+            sudoku.display();
 
         //Grid of boxes
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(20, 20, 20, 20));
 
-        //LIST CONTAINING FIELDS
+        //List containing TextFields
         List<List<TextField>> boardTextFields = new ArrayList<>();
         for (int i = 0; i < 9; i++)
             boardTextFields.add(new ArrayList<>());
@@ -77,19 +79,10 @@ public class GamingArena
 
 
                 emptyTextField.textProperty().addListener((observable, oldValue, newValue) -> {
-                    System.out.println(newValue);
-                    System.out.println(X1);
-                    System.out.println(Y1);
-
-
                     if (newValue.equals("")) {
-                        sudoku.set(X1, Y1, 0);
+                        sudoku.set(Y1, X1, 0);
                     } else {
-                        sudoku.set(X1, Y1, Integer.parseInt(newValue));
-                        System.out.println("NEW VALUE"+(sudoku.get(X1,Y1)));
-                        System.out.println(X1);
-                        System.out.println(Y1);
-
+                        sudoku.set(Y1, X1, Integer.parseInt(newValue));
                     }
                 });
 
@@ -113,10 +106,11 @@ public class GamingArena
         Button saveGame = new Button("Save");
         Button homeButton = new Button("Go Back");
         Pane controls = new Pane();
-        verifyButton.setLayoutX(200);
-        homeButton.setLayoutX(280);
-        saveGame.setLayoutX(360);
+        verifyButton.setLayoutX(60);
+        homeButton.setLayoutX(160);
+        saveGame.setLayoutX(280);
 
+        //Language configuration
         if(IsEnglish==true)
         {
             verifyButton.setText(bundleEN.getString("verifyButton"));
@@ -131,16 +125,16 @@ public class GamingArena
         }
 
 
+        //Add to Pane
+        controls.getChildren().addAll(homeButton,verifyButton,saveGame);
+        root.setCenter(grid);
+        root.setBottom(controls);
+        homeButton.setOnAction(e -> stage.setScene(menu));
+        verifyButton.setOnAction(e -> validate(solution,sudoku,IsEnglish));
+        saveGame.setOnAction(e -> saveGame(sudoku));
 
-            controls.getChildren().addAll(homeButton,verifyButton,saveGame);
 
-      root.setCenter(grid);
-      root.setBottom(controls);
-      homeButton.setOnAction(e -> stage.setScene(menu));
-     verifyButton.setOnAction(e -> validate(solution,sudoku,IsEnglish));
-
-
-
+        //Scene setup
         Scene GamingArena = new Scene(root, 400, 400);
 
         return GamingArena;
@@ -168,26 +162,30 @@ public class GamingArena
         }
         alert.setTitle("BRAVO");
         alert.setContentText(setContentText);
-
-
-
         alert.showAndWait();
+        System.out.println("VALIDATE");
+        sudoku.display();
+        System.out.println("VALIDATE");
+        solution.display();
+
 
     }
 
-    public SudokuBoard saveGame (SudokuBoard sudoku)
+    public static SudokuBoard saveGame (SudokuBoard sudoku)
     {
-
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("save.dat");
+        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
         fileSudokuBoardDao.write(sudoku);
         sudoku.display();
         return sudoku;
-
     }
 
+    private static SudokuBoard Getsolution(SudokuBoard sudokuBoard){
+        BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
+        SudokuBoard solution = (SudokuBoard)sudokuBoard.clone();
+        solver.solve(solution);
 
-
-
+        return solution;
+    }
 
 
 }

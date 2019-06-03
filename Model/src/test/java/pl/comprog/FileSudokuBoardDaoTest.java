@@ -14,10 +14,11 @@ public class FileSudokuBoardDaoTest {
     public void read() {
 
         SudokuBoard sudokuBoard = new SudokuBoard();
+        sudokuBoard.set(0,0,0);
         BackTrackingSudokuSolver sudoku = new BackTrackingSudokuSolver();
         sudoku.solve(sudokuBoard);
 
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("save.dat");
+        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
         fileSudokuBoardDao.write(sudokuBoard);
 
         SudokuBoard sudokuBoard1 = new SudokuBoard();
