@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 
 import java.awt.*;
 
-public class inputBox {
+public class inputBox<List> {
 
      int value =0;
      static TextField inside;

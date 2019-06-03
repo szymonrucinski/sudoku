@@ -9,10 +9,21 @@ public class LanguagePack extends ListResourceBundle {
         return new Object[][]{
                 {"b2", "Easy"},
                 {"b3", "Medium"},
-                {"b4", "Easy"},
+                {"b4", "Hard"},
                 {"b5", "Polish"},
                 {"b6", "English"},
-                {"b7", "LoadGame"},
+                {"b7", "Run Saved Game"},
+                {"verifyButton","Verify"},
+                {"saveGame","Save Game"},
+                {"homeButton","Go Back"},
+                {"setTitleAlert-Correct","Well Done!"},
+                {"setContentTextAlert-Correct","Your solution is correct!"},
+                {"setTitleAlert-Wrong","Failure!"},
+                {"setContentTextAlert-Correct","Try Again"},
+
+
+
+
 
 
         };

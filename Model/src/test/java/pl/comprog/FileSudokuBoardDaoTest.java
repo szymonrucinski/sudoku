@@ -17,7 +17,7 @@ public class FileSudokuBoardDaoTest {
         BackTrackingSudokuSolver sudoku = new BackTrackingSudokuSolver();
         sudoku.solve(sudokuBoard);
 
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("file.dat");
+        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("save.dat");
         fileSudokuBoardDao.write(sudokuBoard);
 
         SudokuBoard sudokuBoard1 = new SudokuBoard();

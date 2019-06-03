@@ -3,6 +3,7 @@ package gui;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.effect.GaussianBlur;
@@ -35,8 +36,8 @@ public class Main extends Application
 {
 
     FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/gui/UI.fxml"));
+    ResourceBundle bundleEN = ResourceBundle.getBundle("gui.LanguagePackPL");
     ResourceBundle bundlePL = ResourceBundle.getBundle("gui.LanguagePack");
-    ResourceBundle bundleEN = ResourceBundle.getBundle("gui.LanguagePackEN");
     private static Scene menu;
     SudokuBoard board = new SudokuBoard();
     Button b2 ;
@@ -46,41 +47,17 @@ public class Main extends Application
     Button b6;
     Button b7;
     Button b8;
-
     Boolean loadedSave =false;
-
-    SudokuBoard Random = new SudokuBoard();
-
+    Boolean IsEnglish;
 
     // LangController language = new LangController();
 
-
-    void Polish() {
-
-        System.out.println("Polski");
-        b2.setText(bundlePL.getString("b2"));
-        System.out.println(bundlePL.getString("b2"));
-        b3.setText(bundlePL.getString("b3"));
-        b4.setText(bundlePL.getString("b4"));
-
-    }
-
-    void English() {
-
-        System.out.println("English");
-        b2.setText(bundleEN.getString("b2"));
-        b3.setText(bundleEN.getString("b3"));
-        b4.setText(bundleEN.getString("b4"));
-
-    }
 
 
      SudokuBoard LoadGame(){
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("save.dat");
          SudokuBoard sudokuBoard1 = new SudokuBoard();
-         BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
          sudokuBoard1 = fileSudokuBoardDao.read();
-            System.out.println("SAVED FILE");
          sudokuBoard1.display();
          return sudokuBoard1;
     }
@@ -99,8 +76,8 @@ public class Main extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
+         IsEnglish=false;
         //MENU DESIGN//
-        boolean IsEnglish= true;
         Pane layout = new Pane();
         layout.setPrefSize(400,400);
 
@@ -120,10 +97,10 @@ public class Main extends Application
 
         Text menuText = new Text();
         menuText.setText("Sudoku");
-        menuText.setFont(Font.font("shanghai", FontWeight.BOLD, FontPosture.REGULAR, 50));
+        menuText.setFont(Font.font("shanghai", FontWeight.BOLD, FontPosture.REGULAR, 60));
         menuText.setFill(Color.RED);
-        menuText.setX(80);
-        menuText.setY(50);
+        menuText.setX(100);
+        menuText.setY(60);
         DropShadow dropShadow = new DropShadow();
 
         menuText.setEffect(dropShadow);
@@ -133,62 +110,49 @@ public class Main extends Application
         b2 = new Button();
         //language.Polish(b2,"b2");
         b2.setText(bundlePL.getString("b2"));
-        b2.setLayoutX(40);
+        b2.setLayoutX(100);
         b2.setLayoutY(100);
-        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene( Random,0,stage,menu)));  //Lambda Expression (e = events, code after '->' operator)
+        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene( new SudokuBoard(),0,stage,menu,IsEnglish)));
 
         b3 = new Button();
         //language.Polish(b3,"b3");
         b3.setText(bundlePL.getString("b3"));
 
-        b3.setLayoutX(100);
+        b3.setLayoutX(156);
         b3.setLayoutY(100);
-        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(Random,1,stage,menu)));
+        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(),1,stage,menu,IsEnglish)));
 
         b4 = new Button();
         b4.setText(bundlePL.getString("b4"));
 
         //language.Polish(b4,"b4");
-        b4.setLayoutX(180);
+        b4.setLayoutX(230);
         b4.setLayoutY(100);
-        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(Random,2,stage,menu)));
+        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(),2,stage,menu,IsEnglish)));
 
         b5 = new Button();
         //language.Polish(b5,"b5");
         b5.setText(bundlePL.getString("b5"));
 
-        b5.setLayoutX(180);
-        b5.setLayoutY(200);
+        b5.setLayoutX(158);
+        b5.setLayoutY(180);
        // b5.setOnAction(e -> language.Polish(b2,"b2"));
-        b5.setOnAction(e ->Polish());
+        b5.setOnAction(e ->English());
 
 
         b6 = new Button();
         //language.Polish(b6,"b6");
         b6.setText(bundlePL.getString("b6"));
-        b6.setLayoutX(180);
+        b6.setLayoutX(156);
         b6.setLayoutY(150);
-       // b6.setOnAction(e -> language.English(b2,"b2"));
-        b6.setOnAction(e ->English());
+        b6.setOnAction(e ->Polish());
 
         b7 = new Button();
         b7.setText("LoadGame");
-        b7.setLayoutX(180);
-        b7.setLayoutY(220);
+        b7.setLayoutX(130);
+        b7.setLayoutY(210);
         if(loadedSave==false) {b7.setText("Run Saved Game");board=startLoaded(board);System.out.println("tEST1");board.display();System.out.println("tEST2");}
-        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(board, 4,stage,menu)));
-
-
-
-/*
-        b8 = new Button();
-        b8.setText("RunSavedGame");
-        b8.setLayoutX(180);
-        b8.setLayoutY(220);
-        b8.setOnAction(e ->startLoaded());
-        if(loadedSave==true)stage.setScene(GamingArena.GamingScene( board,4));
-
-*/
+        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(board, 4,stage,menu,IsEnglish)));
 
 
 
@@ -216,6 +180,32 @@ public class Main extends Application
         ft.play();
         stage.setScene(menu);
         stage.show();
+    }
+    boolean Polish() {
+
+        b2.setText(bundlePL.getString("b2"));
+        System.out.println(bundlePL.getString("b2"));
+        b3.setText(bundlePL.getString("b3"));
+        b4.setText(bundlePL.getString("b4"));
+        b5.setText(bundlePL.getString("b5"));
+        b6.setText(bundlePL.getString("b6"));
+        b7.setText(bundlePL.getString("b7"));
+        return IsEnglish = false;
+
+    }
+
+    boolean English() {
+
+        System.out.println("English");
+        b2.setText(bundleEN.getString("b2"));
+        b3.setText(bundleEN.getString("b3"));
+        b4.setText(bundleEN.getString("b4"));
+        b7.setText(bundleEN.getString("b7"));
+        b5.setText(bundleEN.getString("b5"));
+        b6.setText(bundleEN.getString("b6"));
+
+        return IsEnglish=true;
+
     }
 
     public static void main(String[] args)
