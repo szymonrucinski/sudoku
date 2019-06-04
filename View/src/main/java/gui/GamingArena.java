@@ -28,9 +28,20 @@ public class GamingArena
         ResourceBundle bundlePL = ResourceBundle.getBundle("gui.LanguagePack");
         ResourceBundle bundleEN = ResourceBundle.getBundle("gui.LanguagePackPL");
 
+         final SudokuBoard solution ;
+        final SudokuBoard sudoku;
 
-        SudokuBoard solution = Getsolution(sudokuPassed);
-         SudokuBoard sudoku = (SudokuBoard)solution.clone();
+
+        if(level==4) {
+            FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveSolution.dat");
+            SudokuBoard sudokuBoardLoadSolutionFromFile =fileSudokuBoardDao.read();
+            solution= sudokuBoardLoadSolutionFromFile;
+
+        }
+        else solution=Getsolution(sudokuPassed);
+
+         if(level!=4) sudoku=(SudokuBoard)solution.clone();
+         else sudoku = sudokuPassed;
 
 
 
@@ -41,10 +52,10 @@ public class GamingArena
             if(level==4)lvd.selectLevel(sudokuPassed, level);
 
 
-        System.out.println("SOLUTION.DISPLAY");
-            solution.display();
-        System.out.println("sudoku.DISPLAY");
-            sudoku.display();
+            //Check for solution
+       /* System.out.println("SOLUTION.DISPLAY");
+            solution.display();*/
+
 
         //Grid of boxes
         GridPane grid = new GridPane();
@@ -131,7 +142,7 @@ public class GamingArena
         root.setBottom(controls);
         homeButton.setOnAction(e -> stage.setScene(menu));
         verifyButton.setOnAction(e -> validate(solution,sudoku,IsEnglish));
-        saveGame.setOnAction(e -> saveGame(sudoku));
+        saveGame.setOnAction(e -> saveGame(sudoku,solution));
 
 
         //Scene setup
@@ -163,19 +174,17 @@ public class GamingArena
         alert.setTitle("BRAVO");
         alert.setContentText(setContentText);
         alert.showAndWait();
-        System.out.println("VALIDATE");
-        sudoku.display();
-        System.out.println("VALIDATE");
-        solution.display();
-
-
     }
 
-    public static SudokuBoard saveGame (SudokuBoard sudoku)
+    public static SudokuBoard saveGame (SudokuBoard sudoku,SudokuBoard solution)
     {
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
         fileSudokuBoardDao.write(sudoku);
         sudoku.display();
+
+        FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
+        fileSudokuBoardDaoSolution.write(solution);
+
         return sudoku;
     }
 

@@ -48,9 +48,6 @@ public class Main extends Application
      SudokuBoard LoadGame(){
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
          SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
-         SudokuLoadedFromFile.display();
-         System.out.println("FROM FILE");
-         SudokuLoadedFromFile.display();
          return SudokuLoadedFromFile;
     }
 
