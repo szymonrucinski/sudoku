@@ -1,0 +1,9 @@
+pl/comp/model/ForTest/lvdTest.class
+pl/comp/model/ForTest/SudokuFieldTestAuto.class
+pl/comp/model/ForTest/FileSudokuBoardDaoTest.class
+pl/comp/model/ForTest/SudokSolveAndDisplayTest.class
+pl/comp/model/ForTest/SudokuBoardTest.class
+pl/comp/model/ForTest/BackTrackingSudokuSolverTest.class
+pl/comp/model/ForTest/SudokuFieldTest.class
+pl/comp/model/ForTest/SudokuSolverTest.class
+pl/comp/model/ForTest/VerifierTest.class

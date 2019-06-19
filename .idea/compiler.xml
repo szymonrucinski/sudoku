@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java2" />
+        <module name="Model" />
         <module name="View" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java2" target="1.7" />
-      <module name="Model" target="1.7" />
-      <module name="SudokuGameProject" target="1.5" />
+      <module name="Model" target="11" />
+      <module name="Sudoku" target="11" />
       <module name="View" target="11" />
     </bytecodeTargetLevel>
   </component>
