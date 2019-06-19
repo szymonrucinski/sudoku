@@ -1,0 +1,5 @@
+/.idea/libraries/*
+/javafx-sdk-11.0.2/*
+Model/target/*
+*.dat
+*.log
