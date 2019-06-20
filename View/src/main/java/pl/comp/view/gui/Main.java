@@ -22,6 +22,8 @@ import pl.comp.model.sudoku.*;
 
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -33,8 +35,8 @@ import javafx.scene.effect.DropShadow;
 public class Main extends Application
 {
 
-    ResourceBundle bundleEN = ResourceBundle.getBundle("gui.LanguagePackPL");
-    ResourceBundle bundlePL = ResourceBundle.getBundle("gui.LanguagePack");
+    ResourceBundle bundleEN = ResourceBundle.getBundle("LanguagePackPL");
+    ResourceBundle bundlePL = ResourceBundle.getBundle("LanguagePack");
     private static Scene menu;
     Button b2 ;
     Button b3;
@@ -48,33 +50,41 @@ public class Main extends Application
     Boolean IsEnglish;
 
 
-     SudokuBoard LoadGame(){
+
+     SudokuBoard LoadGame() throws Exception
+     {
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
          SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
          return SudokuLoadedFromFile;
     }
 
 
+
+
+
+
     @Override
-    public void start(Stage stage)
+    public void start(Stage stage) throws Exception
     {
          IsEnglish=false;
         //MENU DESIGN//
         Pane layout = new Pane();
         layout.setPrefSize(400,400);
 
-        InputStream background = Files.newInputStream(Paths.get("View/src/res/images/background.jpg"));
-        Image img = new Image(background);
-        background.close();
+        InputStream background = Files.newInputStream(Paths.get("/Users/szymonrucinski/Documents/Pliki/Studia/SudokuGameProject/View/src/main/resources/images/background.jpg"));
+       Image img = new Image(background);
+      background.close();
 
-        ImageView imgView = new ImageView(img);
+       ImageView imgView = new ImageView(img);
 
-        imgView.setFitWidth(400);
+
+       imgView.setFitWidth(400);
         imgView.setFitHeight(400);
         layout.getChildren().addAll(imgView);
 
         GaussianBlur blur = new GaussianBlur(5);
         imgView.setEffect(blur);
+
 
 
         Text menuText = new Text();
@@ -162,7 +172,7 @@ public class Main extends Application
         b7.setLayoutX(150);
         b7.setLayoutY(210);
        // if(loadedSave==false) {b7.setText("Run Saved Game");LoadGame();}
-        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(LoadGame(),4,stage,menu,IsEnglish)));
+        //b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(LoadGame(),4,stage,menu,IsEnglish)));
 
 
 
@@ -174,15 +184,17 @@ public class Main extends Application
         layout.getChildren().addAll(b2, b3, b4,menuText,b5,b6,b7,languages,difficulty);
         //audio
         ///////////
-        File audioFile = new File("View/src/res/music/music.wav");
-        Media audio = new Media(audioFile.toURI().toString());
-        MediaPlayer audioPlayer = new MediaPlayer(audio);
+
+            File audioFile = new File("View/src/main/resources/music/music.wav");
+            Media audio = new Media(audioFile.toURI().toString());
+            MediaPlayer audioPlayer = new MediaPlayer(audio);
+            audioPlayer.play();
+
+
 
 
         menu = new Scene(layout, 400, 400);
         stage.setTitle("Sudoku");
-        //audioPlayer.setAutoPlay(true);
-        audioPlayer.play();
 
         FadeTransition ft = new FadeTransition(Duration.millis(8000), menuText);
         ft.setFromValue(0.0);
