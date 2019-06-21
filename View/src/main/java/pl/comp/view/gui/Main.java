@@ -48,14 +48,26 @@ public class Main extends Application
     Text difficulty;
 
     Boolean IsEnglish;
+    Boolean loadedSave=false;
 
 
 
-     SudokuBoard LoadGame() throws Exception
+     SudokuBoard LoadGame()
      {
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
-         SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
-         return SudokuLoadedFromFile;
+         try {
+
+             FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
+             SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
+             return SudokuLoadedFromFile;
+
+         }
+         catch (DaoException e)
+         {
+             e.printStackTrace();
+         }
+
+         return new SudokuBoard();
+
     }
 
 
@@ -71,7 +83,7 @@ public class Main extends Application
         Pane layout = new Pane();
         layout.setPrefSize(400,400);
 
-        InputStream background = Files.newInputStream(Paths.get("/Users/szymonrucinski/Documents/Pliki/Studia/SudokuGameProject/View/src/main/resources/images/background.jpg"));
+        InputStream background = Files.newInputStream(Paths.get("View/src/main/resources/images/background.jpg"));
        Image img = new Image(background);
       background.close();
 
@@ -171,8 +183,8 @@ public class Main extends Application
         b7.setText("LoadGame");
         b7.setLayoutX(150);
         b7.setLayoutY(210);
-       // if(loadedSave==false) {b7.setText("Run Saved Game");LoadGame();}
-        //b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(LoadGame(),4,stage,menu,IsEnglish)));
+       if(loadedSave==false) {b7.setText("Run Saved Game");LoadGame();}
+        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(LoadGame(),4,stage,menu,IsEnglish)));
 
 
 

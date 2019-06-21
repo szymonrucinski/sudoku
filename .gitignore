@@ -3,3 +3,6 @@
 Model/target/*
 *.dat
 *.log
+*.txt
+*.db
+*.

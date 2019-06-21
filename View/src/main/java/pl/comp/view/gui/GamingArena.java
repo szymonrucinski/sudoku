@@ -21,7 +21,7 @@ public class GamingArena
 {
 
 
-    public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu,boolean IsEnglish){
+    public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu,boolean IsEnglish) {
         ResourceBundle bundlePL = ResourceBundle.getBundle("LanguagePack");
         ResourceBundle bundleEN = ResourceBundle.getBundle("LanguagePackPL");
 
@@ -151,7 +151,10 @@ public class GamingArena
         root.setBottom(controls);
         homeButton.setOnAction(e -> stage.setScene(menu));
         verifyButton.setOnAction(e -> validate(solution,sudoku,IsEnglish));
-       // saveGame.setOnAction(e -> saveGame(sudoku,solution));
+        saveGame.setOnAction(e -> saveGame(sudoku,solution));
+
+
+
 
 
         //Scene setup
@@ -185,15 +188,21 @@ public class GamingArena
         alert.showAndWait();
     }
 
-    public static SudokuBoard saveGame (SudokuBoard sudoku,SudokuBoard solution) throws DaoException
+    public static SudokuBoard saveGame (SudokuBoard sudoku,SudokuBoard solution)
     {
+        try(
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
-        fileSudokuBoardDao.write(sudoku);
-        sudoku.display();
+        ) {
+            fileSudokuBoardDao.write(sudoku);
+            sudoku.display();
 
-        FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
-        fileSudokuBoardDaoSolution.write(solution);
-
+            FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
+            fileSudokuBoardDaoSolution.write(solution);
+        }
+        catch (DaoException e)
+        {
+            e.printStackTrace();
+        }
         return sudoku;
     }
 

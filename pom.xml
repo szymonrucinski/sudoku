@@ -19,6 +19,36 @@
                     <target>11</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${basedir}</directory>
+                            <directory>${basedir}/Model</directory>
+                            <directory>${basedir}/View</directory>
+                            <includes>
+                                <include>**/*.tmp</include>
+                                <include>**/*.dat</include>
+                                <include>**/*.txt</include>
+                                <include>**/*.db</include>
+                                <include>**/*.log</include>
+                                <include>**/*.</include>
+                                <include>**/fileToCreate.*</include>
+
+
+
+                            </includes>
+                            <excludes>
+                                <exclude>**/important.log</exclude>
+                                <exclude>**/another-important.log</exclude>
+                            </excludes>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

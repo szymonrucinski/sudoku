@@ -69,4 +69,14 @@ public class SudokuField implements Cloneable, Serializable, Comparable<SudokuFi
             return this.compareTo(o);
         }
     }
+
+    private boolean canChange = false;
+
+    public void setCanChange(boolean can) {
+        canChange = can;
+    }
+
+    public boolean getCanChange() {
+        return canChange;
+    }
 }
