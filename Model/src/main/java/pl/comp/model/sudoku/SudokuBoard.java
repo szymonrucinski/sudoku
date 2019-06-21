@@ -124,7 +124,10 @@ public class SudokuBoard implements Cloneable, Serializable {
     public void display() {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
+                System.out.print(board.get(i * SIZE + j).getFieldValue());
+                System.out.print(" ");
             }
+            System.out.printf("%n");
         }
     }
 

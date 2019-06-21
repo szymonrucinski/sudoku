@@ -71,4 +71,47 @@ public class FileSudokuBoardDaoTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testWriteNullBoardToBase() {
+        try (JdbcSudokuBoardDao dao = new JdbcSudokuBoardDao("sudoku")) {
+            assertThrows(DaoException.class, () -> dao.write(null));
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testWriteBoardToBase() {
+        try (JdbcSudokuBoardDao dao = new JdbcSudokuBoardDao("sudoku")) {
+            SudokuBoard sudokuBoard = new SudokuBoard();
+            BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
+            solver.solve(sudokuBoard);
+            dao.write(sudokuBoard);
+            SudokuBoard sudokuBoard2 = dao.read();
+            sudokuBoard.display();
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void readAndWriteBoardTest() {
+        SudokuBoard sudokuBoard1 = new SudokuBoard();
+        BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
+        solver.solve(sudokuBoard1);
+
+        SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
+        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
+            dao.write(sudokuBoard1);
+            SudokuBoard sudokuBoard2 = dao.read();
+            assertEquals(sudokuBoard1, sudokuBoard2);
+            sudokuBoard1.display();
+            System.out.println("------------------------");
+            sudokuBoard2.display();
+            dao.delete();
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
+    }
 }

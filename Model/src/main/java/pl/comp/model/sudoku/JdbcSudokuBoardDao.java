@@ -41,7 +41,7 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>, AutoCloseable {
     private static final String READ_ALL_BOARDS = "SELECT * FROM boards";
     private static final String READ_QUERY_FIELD = "SELECT * FROM fields WHERE [boardName]=?";
     private static final String WRITE_QUERY_BOARD = "INSERT INTO boards([boardName], [creationDate]) VALUES(?, strftime('%d/%m/%Y %H:%M:%S', 'now', 'localtime'))";
-    private static final String WRITE_QUERY_FIELD = "INSERT INTO fields([x], [y], [value], [boardName]) VALUES(?, ?, ?, ?, ?)";
+    private static final String WRITE_QUERY_FIELD = "INSERT INTO fields([x], [y], [value],[boardName]) VALUES(?, ?, ?, ?)";
     private static final String DELETE_QUERY_BOARD = "DELETE FROM boards WHERE [boardName]=?";
     private static final String DELETE_ALL_BOARD = "DELETE FROM boards";
     private static final String DELETE_QUERY_FIELDS = "DELETE FROM fields WHERE [boardName]=?";

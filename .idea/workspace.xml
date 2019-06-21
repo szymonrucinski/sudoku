@@ -1,77 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="baza dziala">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/save.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/exceptions/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/exceptions/DaoException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/FileSudokuBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/FileSudokuBoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/SudokuBoardDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/SudokuBoardDaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/SudokuField.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/pl/comp/model/sudoku/SudokuField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/cobertura/cobertura.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/META-INF/Model.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/cobertura.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/exceptions/DaoException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/exceptions/SudokuException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/logger/FileAndConsoleLoggerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/BackTrackingSudokuSolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/FileSudokuBoardDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/LevelDifficulty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuBoardDaoFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/SudokuSolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/generated-classes/cobertura/pl/comp/model/sudoku/Verifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.BackTrackingSudokuSolverTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.FileSudokuBoardDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.SudokSolveAndDisplayTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.SudokuBoardTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.SudokuFieldTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.VerifierTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/TEST-pl.comp.model.ForTest.lvdTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.BackTrackingSudokuSolverTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.FileSudokuBoardDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.SudokSolveAndDisplayTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.SudokuBoardTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.SudokuFieldTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.VerifierTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/surefire-reports/pl.comp.model.ForTest.lvdTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/test-classes/META-INF/jpms.args" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/target/test-classes/pl/comp/model/ForTest/FileSudokuBoardDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/test-classes/pl/comp/model/ForTest/FileSudokuBoardDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ToDo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/View.iml" beforeDir="false" afterPath="$PROJECT_DIR$/View/View.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/save.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/View/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/pl/comp/view/gui/GamingArena.class" beforeDir="false" afterPath="$PROJECT_DIR$/View/target/classes/pl/comp/view/gui/GamingArena.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/pl/comp/view/gui/LanguagePack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/pl/comp/view/gui/LanguagePackPL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
@@ -120,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="400">
+              <caret line="112" column="34" lean-forward="true" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#633#634#0" expanded="true" />
@@ -137,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-99">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state>
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -155,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="90" column="18" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="18" />
+            <state relative-caret-position="1740">
+              <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
               <folding>
                 <element signature="e#3151#3152#0" expanded="true" />
                 <element signature="e#3202#3203#0" expanded="true" />
@@ -165,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="197">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1781#1782#0" expanded="true" />
@@ -235,7 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>save</find>
       <find>throws</find>
       <find>solution</find>
       <find>sql</find>
@@ -248,7 +181,6 @@
       <find>SudokuBoard</find>
       <find>SudokuBoards</find>
       <find>Serializable</find>
-      <find>read</find>
       <find>LoadGa</find>
       <find>fileTo</find>
       <find>clean</find>
@@ -265,6 +197,8 @@
       <find>Field</find>
       <find>get</find>
       <find>ISD</find>
+      <find>read</find>
+      <find>displa</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -302,7 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuBoardDaoFactory.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comprog/FileSudokuBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/SudokuException.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" />
@@ -349,10 +282,11 @@
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" />
         <option value="$PROJECT_DIR$/Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" />
       </list>
     </option>
   </component>
@@ -531,7 +465,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileSudokuBoardDaoTest">
+  <component name="RunManager" selected="JUnit.FileSudokuBoardDaoTest.readAndWriteBoardTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.comp.view.gui.Main" />
       <module name="View" />
@@ -560,7 +494,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileSudokuBoardDaoTest.getDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Model" />
       <extension name="coverage">
         <pattern>
@@ -570,13 +504,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
       <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="getDatabase" />
+      <option name="METHOD_NAME" value="readAndWriteBoardTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileSudokuBoardDaoTest.readAndWriteFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileSudokuBoardDaoTest.testWriteBoardToBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Model" />
       <extension name="coverage">
         <pattern>
@@ -586,23 +520,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
       <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="readAndWriteFileTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileSudokuBoardDaoTest.testCreateDaoWithNullName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Model" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
-      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="testCreateDaoWithNullName" />
+      <option name="METHOD_NAME" value="testWriteBoardToBase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -624,21 +542,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileSudokuBoardDaoTest.testWriteNullBoardToBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="testWriteNullBoardToBase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoard" />
-      <item itemvalue="JUnit.FileSudokuBoardDaoTest.getDatabase" />
-      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testCreateDaoWithNullName" />
-      <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteFileTest" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.FileSudokuBoardDaoTest" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoardToBase" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteBoardTest" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteBoardToBase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteBoardTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteBoardToBase" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoardToBase" />
         <item itemvalue="JUnit.FileSudokuBoardDaoTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.getDatabase" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteFileTest" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.testCreateDaoWithNullName" />
       </list>
     </recent_temporary>
   </component>
@@ -667,32 +601,11 @@
       <workItem from="1560937174873" duration="5908000" />
       <workItem from="1560948898898" duration="5729000" />
       <workItem from="1561110870130" duration="3351000" />
-      <workItem from="1561136375901" duration="12327000" />
+      <workItem from="1561136375901" duration="13425000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileSudokuBoardDaoTest_testCreateDaoWithNullName - 2019.06.22 at 00h 31m 26s.xml">
-      <configuration name="FileSudokuBoardDaoTest.testCreateDaoWithNullName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_readAndWriteFileTest - 2019.06.22 at 00h 31m 34s.xml">
-      <configuration name="FileSudokuBoardDaoTest.readAndWriteFileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_readAndWriteFileTest - 2019.06.22 at 00h 32m 31s.xml">
-      <configuration name="FileSudokuBoardDaoTest.readAndWriteFileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_readAndWriteFileTest - 2019.06.22 at 00h 39m 20s.xml">
-      <configuration name="FileSudokuBoardDaoTest.readAndWriteFileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_getDatabase - 2019.06.22 at 00h 39m 33s.xml">
-      <configuration name="FileSudokuBoardDaoTest.getDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest - 2019.06.22 at 00h 43m 45s.xml">
-      <configuration name="FileSudokuBoardDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest - 2019.06.22 at 00h 44m 36s.xml">
-      <configuration name="FileSudokuBoardDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileSudokuBoardDaoTest - 2019.06.22 at 00h 45m 17s.xml">
       <configuration name="FileSudokuBoardDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -702,14 +615,67 @@
     <history-entry file="FileSudokuBoardDaoTest - 2019.06.22 at 00h 52m 53s.xml">
       <configuration name="FileSudokuBoardDaoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_testWriteNullBoardToBase - 2019.06.22 at 01h 22m 18s.xml">
+      <configuration name="FileSudokuBoardDaoTest.testWriteNullBoardToBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 23m 21s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 24m 12s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_testWriteBoardToBase - 2019.06.22 at 01h 27m 32s.xml">
+      <configuration name="FileSudokuBoardDaoTest.testWriteBoardToBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 30m 54s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 32m 56s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 33m 29s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158539000" />
+    <option name="totallyTimeSpent" value="159637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31805557" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278496" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32487923" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.020833334" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.2951389" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31805557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -736,39 +702,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.020833334" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.020833334" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32569444" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29494712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32549942" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.20555556" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.020833334" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
@@ -1093,35 +1027,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="90" column="18" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="18" />
-          <folding>
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="400">
+          <caret line="112" column="34" lean-forward="true" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state>
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+          <folding>
+            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#3202#3203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,14 +1064,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="197">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
           </folding>
         </state>
       </provider>
