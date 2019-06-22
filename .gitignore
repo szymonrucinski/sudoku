@@ -1,0 +1,7 @@
+/.idea/libraries/*
+Model/target/*
+*.dat
+*.log
+*.txt
+*.db
+*.

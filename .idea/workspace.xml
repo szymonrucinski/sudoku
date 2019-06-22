@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/saveSolution.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/gui/GamingArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/gui/GamingArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/gui/GamingArena.class" beforeDir="false" afterPath="$PROJECT_DIR$/View/target/classes/gui/GamingArena.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/target/classes/gui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/View/target/classes/gui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveTest.dat" beforeDir="false" afterPath="$PROJECT_DIR$/saveTest.dat" afterDir="false" />
-    </list>
+    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="baza dziala" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
     <ignored path="$PROJECT_DIR$/View/target/" />
@@ -24,13 +16,102 @@
       <FILTER>gui.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/Main.java">
+        <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="270">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="40" selection-start-line="9" selection-end-line="9" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,36 +133,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Back</find>
-      <find>solver</find>
-      <find>validate</find>
-      <find>SudokuBoard</find>
-      <find>SAVE</find>
-      <find>SOLUTION</find>
+      <find>aud</find>
+      <find>default</find>
+      <find>DB_URL</find>
+      <find>l</find>
+      <find>Sudoku</find>
+      <find>file</find>
+      <find>log</find>
+      <find>field</find>
+      <find>Field</find>
+      <find>ISD</find>
+      <find>displa</find>
+      <find>.dat</find>
+      <find>read</find>
+      <find>Syste</find>
       <find>get</find>
-      <find>.get</find>
-      <find>display</find>
+      <find>getField</find>
       <find>Load</find>
-      <find>0</find>
-      <find>clone</find>
-      <find>level</find>
-      <find>verify</find>
-      <find>b2</find>
-      <find>menuText</find>
-      <find>langu</find>
-      <find>polish</find>
-      <find>difficulty</find>
-      <find>void</find>
-      <find>boolean</find>
-      <find>bundle</find>
-      <find>languages</find>
+      <find>display</find>
+      <find>saveSolution</find>
+      <find>saveTest</find>
+      <find>DaoEx</find>
       <find>saveGame</find>
-      <find>sudoku</find>
-      <find>solution</find>
-      <find>save</find>
-      <find>system</find>
-      <find>Sys</find>
-      <find>load</find>
+      <find>DaoExcep</find>
+      <find>mediaPlayer</find>
+      <find>e.print</find>
+      <find>catch</find>
+      <find>logger</find>
+      <find>BR</find>
+      <find>validate</find>
+      <find>Message</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -89,62 +170,95 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="test" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Model/src/main/java/comprog/SudokuBox.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/comprog/Verifier.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/comprog/SudokuFieldTestAuto.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/comprog/SudokuBoard.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/comprog/SudokuBoardTest.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/GraphicalInterface.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/IncrementUIController.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/App.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/gui/App.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/gui/Main.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/sample.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/gui/sample.fxml" />
-        <option value="$PROJECT_DIR$/View/src/gui/Main.java" />
-        <option value="$PROJECT_DIR$/View/src/gui/Controller.java" />
-        <option value="$PROJECT_DIR$/View/src/gui/sample.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/sample.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/Ui.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/IncrementUI.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/UI.fxml" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/UIcontroller.java" />
-        <option value="$PROJECT_DIR$/View/pom.xml" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokSolveAndDisplayTest.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comprog/LevelDifficulty.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/BackTrackingSudokuSolver.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/LevelDifficulty.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuBoard.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuColumn.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuField.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuRow.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/Dao.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/FileSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuBox.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuBoardDaoFactory.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comprog/lvdTest.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/Easy.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/words_polish.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/words_english.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/ResourceBundleEx.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/words.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/words_en.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/words_sk.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/language/language__pl.properties" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/LanguagePack_pl.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/GameLoader.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/BorderPane.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/LangController.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comprog/BackTrackingSudokuSolver.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/textField.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/inputBox.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/LanguagePackEN.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comprog/FileSudokuBoardDao.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/Menu.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/MainMenu.java" />
-        <option value="$PROJECT_DIR$/View/src/test/java/LoadingTest.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comprog/FileSudokuBoardDaoTest.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comprog/LevelDifficulty.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/LanguagePackPL.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/LanguagePack.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/GamingArena.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/gui/Main.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuSolverTest.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/module-info.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/LanguagePack.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/LanguagePackPL.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/inputBox.java" />
+        <option value="$PROJECT_DIR$/View/pom.xml" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/BackTrackingSudokuSolver.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GameLoader.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/module-info.java" />
+        <option value="$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties" />
+        <option value="$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/LevelDifficulty.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBox.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/module-info.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -152,124 +266,66 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SudokuGameProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Sudoku" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SudokuGameProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Sudoku" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="801" />
+    <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559648729143" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560955314728" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="comprog" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/View/src/main/java/gui" />
-      <recent name="$PROJECT_DIR$/View/src/main/java/language" />
-      <recent name="$PROJECT_DIR$/View/src/gui/main/java/sample" />
-      <recent name="$PROJECT_DIR$/View/src/main/java" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/View/src/main/java" />
+      <recent name="$PROJECT_DIR$/Model/src/main/java" />
+      <recent name="$PROJECT_DIR$/Model/src/main/java/pl/exceptions" />
+      <recent name="$PROJECT_DIR$/View/src/main/java/gui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.comp.model.sudoku" />
+      <recent name="pl.logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/View/src/main/java/gui" />
@@ -293,12 +349,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.Main" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.view.gui.Main" />
       <module name="View" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media " />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.*" />
+          <option name="PATTERN" value="pl.comp.view.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,76 +361,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.Main" />
-      <module name="View" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.media,javafx.graphics,javafx.swing,javafx.web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResourceBundleEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zetcode.ResourceBundleEx" />
-      <module name="View" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileSudokuBoardDaoTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileSudokuBoardDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Model" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.comprog.*" />
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.comprog" />
-      <option name="MAIN_CLASS_NAME" value="pl.comprog.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="read" />
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="readAndWriteBoardTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokSolveAndDisplayTest.TestSudokuAndDisplay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileSudokuBoardDaoTest.testWriteBoardToBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Model" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.comprog.*" />
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.comprog" />
-      <option name="MAIN_CLASS_NAME" value="pl.comprog.SudokSolveAndDisplayTest" />
-      <option name="METHOD_NAME" value="TestSudokuAndDisplay" />
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="testWriteBoardToBase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lvdTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileSudokuBoardDaoTest.testWriteNullBoard" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Model" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.comprog.*" />
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.comprog" />
-      <option name="MAIN_CLASS_NAME" value="pl.comprog.lvdTest" />
-      <option name="METHOD_NAME" value="Test" />
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="testWriteNullBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSudokuBoardDaoTest.testWriteNullBoardToBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.comp.model.ForTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.comp.model.ForTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.comp.model.ForTest.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="testWriteNullBoardToBase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -383,18 +442,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ResourceBundleEx" />
-      <item itemvalue="JUnit.SudokSolveAndDisplayTest.TestSudokuAndDisplay" />
-      <item itemvalue="JUnit.lvdTest.Test" />
-      <item itemvalue="JUnit.FileSudokuBoardDaoTest.read" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoard" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoardToBase" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteBoardTest" />
+      <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteBoardToBase" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.read" />
-        <item itemvalue="Application.ResourceBundleEx" />
-        <item itemvalue="JUnit.lvdTest.Test" />
-        <item itemvalue="JUnit.SudokSolveAndDisplayTest.TestSudokuAndDisplay" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.readAndWriteBoardTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteBoardToBase" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.testWriteNullBoardToBase" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -418,48 +478,56 @@
       <workItem from="1559511050311" duration="16348000" />
       <workItem from="1559563292319" duration="15834000" />
       <workItem from="1559645305090" duration="3414000" />
+      <workItem from="1560876207387" duration="240000" />
+      <workItem from="1560936802006" duration="241000" />
+      <workItem from="1560937174873" duration="5908000" />
+      <workItem from="1560948898898" duration="5729000" />
+      <workItem from="1561110870130" duration="3351000" />
+      <workItem from="1561136375901" duration="13530000" />
+      <workItem from="1561187217334" duration="1950000" />
+      <workItem from="1561223470797" duration="3427000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 23m 04s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 01h 33m 29s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 26m 00s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 09h 20m 23s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 26m 29s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 20m 48s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 26m 38s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 21m 26s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 27m 14s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 24m 01s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 27m 58s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 24m 30s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 11h 29m 10s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 25m 15s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 17h 49m 49s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 25m 39s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 17h 51m 59s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 25m 55s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FileSudokuBoardDaoTest_read - 2019.06.03 at 17h 52m 25s.xml">
-      <configuration name="FileSudokuBoardDaoTest.read" configurationId="JUnit" />
+    <history-entry file="FileSudokuBoardDaoTest_readAndWriteBoardTest - 2019.06.22 at 11h 26m 14s.xml">
+      <configuration name="FileSudokuBoardDaoTest.readAndWriteBoardTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130743000" />
+    <option name="totallyTimeSpent" value="168439000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="801" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32569444" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29652777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,31 +535,31 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29589042" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32729468" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32739726" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32487923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.020833334" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3298611" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.2951389" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32569444" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29713425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -499,25 +567,25 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3287858" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29604366" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278496" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36271676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32742155" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32487923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.020833334" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3298611" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.2951389" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
@@ -526,42 +594,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/src/gui/main/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/gui/main/sample/Main.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/gui/main/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/IncrementUI.fxml" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/IncrementUIController.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/UIcontroller.java">
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GameLoader.java" />
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/logging.properties" />
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/res/images/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/pom.xml">
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/save.dat" />
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/VerifierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/language/words_sk.properties" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/language/words.properties" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/language/words_en.properties" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/language/ResourceBundleEx.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11/javafx-base-11-mac.jar!/javafx/event/EventHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -569,226 +625,322 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/res/language/output_pl.properties" />
-    <entry file="file://$PROJECT_DIR$/View/src/res/language/output.properties" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/UI.fxml">
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/UIcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/sudoku">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/UI.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/log_output.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="-9273">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/BorderPane.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/LangController.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/textField.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/GameLoader.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/SudokuException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/inputBox.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/BackTrackingSudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuRow.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="75" column="27" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/LevelDifficulty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#1161#1162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="163" column="27" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuSolver.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/MainMenu.java" />
-    <entry file="file://$PROJECT_DIR$/View/src/test/java/LoadingTest.java" />
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/lvdTest.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokSolveAndDisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokuBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2182">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokuSolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokuFieldTestAuto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="51" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/SudokuFieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/LanguagePack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/LanguagePackPL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/BackTrackingSudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/FileSudokuBoardDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/LevelDifficulty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
-          <folding>
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2835#2836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/BackTrackingSudokuSolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuBoardDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comprog/FileSudokuBoardDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/GamingArena.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comprog/SudokuBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saveSolution.dat">
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/gui/Main.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="-1420">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuSolverTest.java" />
+    <entry file="file://$PROJECT_DIR$/saveSolution.dat" />
+    <entry file="file://$PROJECT_DIR$/log_output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_output.log.lck" />
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="359" selection-end-line="486" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -845,11 +997,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>View</last-edited>
+          <last-edited>Model</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -869,7 +1022,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.13-beta-2</last-edited>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
