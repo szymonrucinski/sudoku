@@ -25,6 +25,7 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>, AutoCloseable {
             logger.log(SEVERE, DaoException.NO_JDBC_DRIVER, cnfex);
         }
     }
+
     private static final String CREATE_BOARDS_TABLE = "CREATE TABLE IF NOT EXISTS boards (" +
             "[boardName] VARCHAR(255)," +
             "[creationDate] VARCHAR(255)" +

@@ -1,15 +1,10 @@
 package pl.comp.model.ForTest;
 
-
 import org.junit.jupiter.api.Test;
 import pl.comp.model.exceptions.DaoException;
-import pl.comp.model.exceptions.SudokuException;
-
 import pl.comp.model.sudoku.*;
-
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class JdbcSudokuBoardDaoTest {
 

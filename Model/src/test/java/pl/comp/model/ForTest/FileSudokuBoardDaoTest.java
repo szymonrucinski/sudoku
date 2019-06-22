@@ -4,13 +4,13 @@ import org.junit.Test;
 import pl.comp.model.exceptions.DaoException;
 import pl.comp.model.logger.FileAndConsoleLoggerFactory;
 import pl.comp.model.sudoku.*;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FileSudokuBoardDaoTest {
+
+public class FileSudokuBoardDaoTest
+{
     private static final Logger logger = FileAndConsoleLoggerFactory.getConfiguredLogger(FileSudokuBoardDaoTest.class.getName());
 
 
@@ -29,14 +29,6 @@ public class FileSudokuBoardDaoTest {
         }
     }
 
-   /* @Test
-    public void testReadFromNonExistingFile() {
-        try (FileSudokuBoardDao dao = new FileSudokuBoardDao("testReadFromNonExistingFile.dat")) {
-            assertThrows(DaoException.class, () -> dao.read());
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-    }*/
 
     @Test
     public void testWriteNullBoard() {
@@ -61,10 +53,11 @@ public class FileSudokuBoardDaoTest {
             e.printStackTrace();
         }
     }
+
     @Test
     public void getDatabase() {
         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
-        try(JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
+        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
             logger.log(Level.INFO, "Connected to DB");
 
         } catch (DaoException e) {
@@ -88,7 +81,6 @@ public class FileSudokuBoardDaoTest {
             BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
             solver.solve(sudokuBoard);
             dao.write(sudokuBoard);
-            SudokuBoard sudokuBoard2 = dao.read();
             sudokuBoard.display();
         } catch (DaoException e) {
             e.printStackTrace();
@@ -106,7 +98,7 @@ public class FileSudokuBoardDaoTest {
             dao.write(sudokuBoard1);
             SudokuBoard sudokuBoard2 = dao.read();
             assertEquals(sudokuBoard1, sudokuBoard2);
-            logger.log(Level.INFO,sudokuBoard1.toString());
+            logger.log(Level.INFO, sudokuBoard1.toString());
             dao.delete();
         } catch (DaoException e) {
             e.printStackTrace();

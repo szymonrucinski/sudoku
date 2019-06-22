@@ -1,4 +1,5 @@
 package pl.comp.model.ForTest;
+
 import pl.comp.model.sudoku.*;
 import org.junit.Test;
 
@@ -8,32 +9,27 @@ import static junit.framework.TestCase.assertTrue;
 import static junit.framework.TestCase.assertFalse;
 
 
+public class SudokuBoardTest {
 
-public class SudokuBoardTest
-{
-
-    public void SudokuBoardTest()
-    {
+    public void SudokuBoardTest() {
 
     }
 
     @Test
-    public  void testFillWith0()
-    {
+    public void testFillWith0() {
         SudokuBoard sudoku = new SudokuBoard();
-        assertEquals(0,sudoku.get(0,0));
-        assertEquals(0,sudoku.get(5,5));
+        assertEquals(0, sudoku.get(0, 0));
+        assertEquals(0, sudoku.get(5, 5));
     }
 
     @Test
 
-    public void testGetBoard()
-    {
+    public void testGetBoard() {
         SudokuBoard sudoku = new SudokuBoard();
 
         //column 1
         sudoku.set(0, 0, 4);
-        assertEquals(4,sudoku.get(0,0));
+        assertEquals(4, sudoku.get(0, 0));
         sudoku.set(1, 0, 7);
         sudoku.set(2, 0, 1);
         sudoku.set(3, 0, 9);
@@ -69,12 +65,11 @@ public class SudokuBoardTest
         sudoku.set(6, 8, 8);
         sudoku.set(7, 8, 4);
         sudoku.set(8, 8, 7);
-        assertEquals(7,sudoku.get(8,8));
+        assertEquals(7, sudoku.get(8, 8));
     }
 
     @Test
-    public    void testGetColumn()
-    {
+    public void testGetColumn() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -87,9 +82,9 @@ public class SudokuBoardTest
         sudoku.set(8, 0, 9);
         assertTrue(sudoku.getColumn(0).verify());
     }
+
     @Test
-    public void testGetColumnWrong()
-    {
+    public void testGetColumnWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -104,8 +99,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public  void testGetRow()
-    {
+    public void testGetRow() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(0, 1, 2);
@@ -123,8 +117,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public  void testGetRowWrong()
-    {
+    public void testGetRowWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(0, 1, 2);
@@ -140,8 +133,7 @@ public class SudokuBoardTest
 
 
     @Test
-    public  void testGetBox()
-    {
+    public void testGetBox() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(0, 1, 2);
@@ -170,8 +162,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public  void testGetBoxWrong()
-    {
+    public void testGetBoxWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(0, 1, 2);
@@ -198,8 +189,7 @@ public class SudokuBoardTest
 
 
     @Test
-    public  void testVerify()
-    {
+    public void testVerify() {
         SudokuBoard sudoku = new SudokuBoard();
 //box
         sudoku.set(0, 0, 1);
@@ -234,8 +224,7 @@ public class SudokuBoardTest
 
 
     @Test
-    public  void testVerifyWrong()
-    {
+    public void testVerifyWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         //box
         sudoku.set(0, 0, 1);
@@ -266,8 +255,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public   void testVerifyWith0()
-    {
+    public void testVerifyWith0() {
         SudokuBoard sudoku = new SudokuBoard();
         //box
         sudoku.set(0, 0, 1);
@@ -299,6 +287,7 @@ public class SudokuBoardTest
         assertTrue(sudoku.verify(5, 6));
         assertTrue(sudoku.verify(8, 8));
     }
+
     @Test
     public void testVerifyOnlyWith0() {
         SudokuBoard sudoku = new SudokuBoard();
@@ -309,11 +298,8 @@ public class SudokuBoardTest
     }
 
 
-
-
     @Test
-    public  void testCheckBoard()
-    {
+    public void testCheckBoard() {
         SudokuBoard sudoku = new SudokuBoard();
         //box
         sudoku.set(0, 0, 1);
@@ -345,8 +331,7 @@ public class SudokuBoardTest
 
 
     @Test
-    public  void testCheckBoardWrong()
-    {
+    public void testCheckBoardWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         //box
         sudoku.set(0, 0, 1);
@@ -373,12 +358,11 @@ public class SudokuBoardTest
         sudoku.set(7, 0, 8);
         sudoku.set(8, 0, 9);
 
-        assertEquals(false,  sudoku.checkBoard());
+        assertEquals(false, sudoku.checkBoard());
     }
 
     @Test
-    public void testCheckBoardWith0()
-    {
+    public void testCheckBoardWith0() {
         SudokuBoard sudoku = new SudokuBoard();
         //box
         sudoku.set(0, 0, 1);
@@ -407,6 +391,7 @@ public class SudokuBoardTest
 
         assertTrue(sudoku.checkBoard());
     }
+
     @Test
     public void testDisplay() {
         SudokuBoard sudoku = new SudokuBoard();
@@ -424,8 +409,7 @@ public class SudokuBoardTest
 
 
     @Test
-    public void checkOverrideEquals()
-    {
+    public void checkOverrideEquals() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -453,8 +437,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public void checkOverrideEqualsWrong()
-    {
+    public void checkOverrideEqualsWrong() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -481,8 +464,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public void checkOverrideEqualsTheSame()
-    {
+    public void checkOverrideEqualsTheSame() {
         SudokuBoard sudoku = new SudokuBoard();
         sudoku.set(0, 0, 1);
         sudoku.set(1, 0, 2);
@@ -497,8 +479,7 @@ public class SudokuBoardTest
     }
 
     @Test
-    public void checkToString()
-    {
+    public void checkToString() {
         SudokuBoard sudoku = new SudokuBoard();
     }
 

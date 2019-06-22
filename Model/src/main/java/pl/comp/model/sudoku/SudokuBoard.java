@@ -1,4 +1,5 @@
 package pl.comp.model.sudoku;
+
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -50,8 +51,6 @@ public class SudokuBoard implements Cloneable, Serializable {
         boxes = Arrays.asList(sboxes);
         board = Arrays.asList(sboard);
     }
-
-
 
 
     @Override
@@ -156,7 +155,7 @@ public class SudokuBoard implements Cloneable, Serializable {
         for (int x = 0; x < 9; x++) {
             for (int y = 0; y < 9; y++) {
                 sb.append(board.get(x * SIZE + y).getFieldValue());
-                if ( y != 8) {
+                if (y != 8) {
                     sb.append(" ");
                 }
             }

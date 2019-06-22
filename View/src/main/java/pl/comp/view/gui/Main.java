@@ -20,16 +20,14 @@ import javafx.util.Duration;
 import pl.comp.model.exceptions.DaoException;
 import pl.comp.model.sudoku.*;
 
-
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
 
 import javafx.scene.effect.DropShadow;
+
 //--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media
 
 
@@ -52,6 +50,7 @@ public class Main extends Application {
 
 
     SudokuBoard LoadGame() {
+        
               /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
              SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
              return SudokuLoadedFromFile;*/

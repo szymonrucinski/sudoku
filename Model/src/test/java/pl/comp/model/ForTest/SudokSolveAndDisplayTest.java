@@ -1,4 +1,5 @@
 package pl.comp.model.ForTest;
+
 import pl.comp.model.sudoku.*;
 import org.junit.Test;
 

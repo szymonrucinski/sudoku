@@ -9,7 +9,7 @@ public class SudokuFieldTestAuto {
     @Test
     public void DeepCopy() {
         SudokuBoard quiz = new SudokuBoard();
-        SudokuBoard test = (SudokuBoard)quiz.clone();
+        SudokuBoard test = (SudokuBoard) quiz.clone();
 
 
         BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();

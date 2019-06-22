@@ -3,12 +3,8 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
 import java.io.*;
 
-/**
- * SudokuField class.
- */
 public class SudokuField implements Cloneable, Serializable, Comparable<SudokuField> {
 
     private int value;
@@ -70,13 +66,4 @@ public class SudokuField implements Cloneable, Serializable, Comparable<SudokuFi
         }
     }
 
-    private boolean canChange = false;
-
-    public void setCanChange(boolean can) {
-        canChange = can;
-    }
-
-    public boolean getCanChange() {
-        return canChange;
-    }
 }

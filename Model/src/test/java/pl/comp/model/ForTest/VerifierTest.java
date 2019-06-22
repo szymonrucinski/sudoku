@@ -1,15 +1,15 @@
 package pl.comp.model.ForTest;
+
 import pl.comp.model.sudoku.*;
 import org.junit.Test;
+
 import static junit.framework.TestCase.assertEquals;
 
 
-
-
- public class VerifierTest {
+public class VerifierTest {
 
     @Test
-   public void addField() {
+    public void addField() {
 
         SudokuColumn sudokuColumn = new SudokuColumn();
 
@@ -22,10 +22,8 @@ import static junit.framework.TestCase.assertEquals;
     }
 
 
-
     @Test
-    public void checkOverrideEquals()
-    {
+    public void checkOverrideEquals() {
         SudokuColumn sudokuColumn = new SudokuColumn();
         SudokuColumn sudokuColumn1 = new SudokuColumn();
         for (int i = 0; i < 9; i++) {
@@ -38,8 +36,7 @@ import static junit.framework.TestCase.assertEquals;
     }
 
     @Test
-   public void checkOverrideEqualsWrong()
-    {
+    public void checkOverrideEqualsWrong() {
         SudokuColumn sudokuColumn = new SudokuColumn();
         SudokuColumn sudokuColumn1 = new SudokuColumn();
         for (int i = 0; i < 9; i++) {
@@ -55,8 +52,7 @@ import static junit.framework.TestCase.assertEquals;
     }
 
     @Test
-   public void checkOverrideEqualsTheSame()
-    {
+    public void checkOverrideEqualsTheSame() {
         SudokuColumn sudokuColumn = new SudokuColumn();
 
         for (int i = 0; i < 9; i++) {
@@ -68,8 +64,7 @@ import static junit.framework.TestCase.assertEquals;
     }
 
     @Test
-    public void checkToString()
-    {
+    public void checkToString() {
         SudokuColumn sudokuColumn = new SudokuColumn();
         System.out.println(sudokuColumn.toString());
     }

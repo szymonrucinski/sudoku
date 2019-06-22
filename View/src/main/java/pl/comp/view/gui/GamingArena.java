@@ -1,5 +1,5 @@
-//Packages and import
 package pl.comp.view.gui;
+
 import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import pl.comp.model.exceptions.DaoException;
 import pl.comp.model.logger.FileAndConsoleLoggerFactory;
 import pl.comp.model.sudoku.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -20,56 +21,40 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class GamingArena
-{
-     static Logger logger = FileAndConsoleLoggerFactory.getConfiguredLogger(GamingArena.class.getName());
+public class GamingArena {
+    static Logger logger = FileAndConsoleLoggerFactory.getConfiguredLogger(GamingArena.class.getName());
 
 
-    public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu,boolean IsEnglish) {
+    public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu, boolean IsEnglish) {
         ResourceBundle bundlePL = ResourceBundle.getBundle("LanguagePack");
         ResourceBundle bundleEN = ResourceBundle.getBundle("LanguagePackPL");
 
-        final SudokuBoard solution ;
+        final SudokuBoard solution;
         final SudokuBoard sudoku;
         SudokuBoard solution1;
 
 
+        if (level == 4) {
 
+            try (FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("Solution.dat")) {
+                SudokuBoard sudokuBoardLoadSolutionFromFile = fileSudokuBoardDao.read();
+                solution1 = sudokuBoardLoadSolutionFromFile;
+                logger.log(Level.INFO, DaoException.SAVE_LOADED);
+            } catch (DaoException e) {
+                e.printStackTrace();
+                solution1 = new SudokuBoard();
+            }
 
-       if(level==4) {
+            solution = solution1;
+        } else solution = Getsolution(sudokuPassed);
 
-           try(FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveSolution.dat"))
-           {
-               SudokuBoard sudokuBoardLoadSolutionFromFile =fileSudokuBoardDao.read();
-               solution1 = sudokuBoardLoadSolutionFromFile;
-               logger.log(Level.INFO,DaoException.SAVE_LOADED);
-           }
-           catch (DaoException e) {
-               e.printStackTrace();
-               solution1 = new SudokuBoard();
-           }
-          // FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveSolution.dat");
-         //  SudokuBoard sudokuBoardLoadSolutionFromFile =fileSudokuBoardDao.read();
-           // solution = sudokuBoardLoadSolutionFromFile;
-           solution=solution1;
-                    }
-        else solution=Getsolution(sudokuPassed);
+        if (level != 4) {
+            sudoku = (SudokuBoard) solution.clone();
+        } else sudoku = sudokuPassed;
 
-         if(level!=4) {sudoku=(SudokuBoard)solution.clone();}
-         else sudoku = sudokuPassed;
-
-
-
-        //Sudoku setup
-
-            LevelDifficulty lvd = new LevelDifficulty();
-            if(level!=4)lvd.selectLevel(sudoku, level);
-            if(level==4)lvd.selectLevel(sudokuPassed, level);
-
-
-            //Check for solution
-       /* System.out.println("SOLUTION.DISPLAY");
-            solution.display();*/
+        LevelDifficulty lvd = new LevelDifficulty();
+        if (level != 4) lvd.selectLevel(sudoku, level);
+        if (level == 4) lvd.selectLevel(sudokuPassed, level);
 
 
         //Grid of boxes
@@ -82,10 +67,10 @@ public class GamingArena
             boardTextFields.add(new ArrayList<>());
 
         //SETTING UP A LIST
-        for (int x = 0; x < 9; x++){
+        for (int x = 0; x < 9; x++) {
             for (int y = 0; y < 9; y++) {
                 TextField emptyTextField = new TextField();
-                int valueFromSudokuField = sudoku.get(y,x);
+                int valueFromSudokuField = sudoku.get(y, x);
                 emptyTextField.setText(String.valueOf(valueFromSudokuField));
                 emptyTextField.setEditable(true);
                 emptyTextField.setAlignment(Pos.CENTER);
@@ -99,9 +84,9 @@ public class GamingArena
                         return null;
                     }
                 }));
-                int X1=x;
-                int Y1 =y;
-                grid.add(emptyTextField,x,y);
+                int X1 = x;
+                int Y1 = y;
+                grid.add(emptyTextField, x, y);
 
 
                 emptyTextField.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -114,17 +99,13 @@ public class GamingArena
 
 
             }
-    }
-
+        }
 
 
         //Instantiating the BorderPane class
         BorderPane root = new BorderPane();
         root.setBottom(new TextField("Bottom"));
         root.setCenter(new TextField("Center"));
-
-
-
 
 
         //Buttons
@@ -137,14 +118,12 @@ public class GamingArena
         saveGame.setLayoutX(280);
 
         //Language configuration
-        if(IsEnglish==true)
-        {
+        if (IsEnglish == true) {
             verifyButton.setText(bundleEN.getString("verifyButton"));
             saveGame.setText(bundleEN.getString("saveGame"));
             homeButton.setText(bundleEN.getString("homeButton"));
 
-        }
-        else {
+        } else {
             verifyButton.setText(bundlePL.getString("verifyButton"));
             saveGame.setText(bundlePL.getString("saveGame"));
             homeButton.setText(bundlePL.getString("homeButton"));
@@ -152,15 +131,12 @@ public class GamingArena
 
 
         //Add to Pane
-        controls.getChildren().addAll(homeButton,verifyButton,saveGame);
+        controls.getChildren().addAll(homeButton, verifyButton, saveGame);
         root.setCenter(grid);
         root.setBottom(controls);
         homeButton.setOnAction(e -> stage.setScene(menu));
-        verifyButton.setOnAction(e -> validate(solution,sudoku,IsEnglish));
-        saveGame.setOnAction(e -> saveGame(sudoku,solution));
-
-
-
+        verifyButton.setOnAction(e -> validate(solution, sudoku, IsEnglish));
+        saveGame.setOnAction(e -> saveGame(sudoku, solution));
 
 
         //Scene setup
@@ -169,21 +145,19 @@ public class GamingArena
         return GamingArena;
     }
 
-    private static void  validate(SudokuBoard solution, SudokuBoard sudoku, boolean IsEnglish)
-    {
+    private static void validate(SudokuBoard solution, SudokuBoard sudoku, boolean IsEnglish) {
 
         String setTitle = "OK";
-       String setContentText="OK";
+        String setContentText = "OK";
 
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
 
-        for(int i =0;i<9;i++){
-            for(int j=0;j<9;j++)
-            {
-                if(sudoku.get(i,j)==solution.get(i,j))continue;
-                else  setContentText="FAIL!";
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (sudoku.get(i, j) == solution.get(i, j)) continue;
+                else setContentText = "FAIL!";
 
 
             }
@@ -193,17 +167,15 @@ public class GamingArena
         alert.showAndWait();
     }
 
-    public static SudokuBoard saveGame (SudokuBoard sudoku,SudokuBoard solution)
-    {
+    public static SudokuBoard saveGame(SudokuBoard sudoku, SudokuBoard solution) {
         //New changes
         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
-        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku"))
-        {
-            FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
+        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
+            FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("Solution.dat");
             fileSudokuBoardDaoSolution.write(solution);
             dao.write(sudoku);
-            logger.log(Level.INFO,solution.toString());
-            logger.log(Level.INFO,sudoku.toString());
+            logger.log(Level.INFO, solution.toString());
+            logger.log(Level.INFO, sudoku.toString());
 
 
         } catch (DaoException e) {
@@ -211,14 +183,13 @@ public class GamingArena
             logger.log(Level.INFO, "ERROR WHILE READING AND WRITING");
 
 
-
         }
         return sudoku;
     }
 
-    private static SudokuBoard Getsolution(SudokuBoard sudokuBoard){
+    private static SudokuBoard Getsolution(SudokuBoard sudokuBoard) {
         BackTrackingSudokuSolver solver = new BackTrackingSudokuSolver();
-        SudokuBoard solution = (SudokuBoard)sudokuBoard.clone();
+        SudokuBoard solution = (SudokuBoard) sudokuBoard.clone();
         solver.solve(solution);
 
         return solution;

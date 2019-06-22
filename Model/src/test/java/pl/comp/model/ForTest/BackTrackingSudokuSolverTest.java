@@ -3,10 +3,7 @@ package pl.comp.model.ForTest;
 import org.junit.Test;
 import pl.comp.model.sudoku.BackTrackingSudokuSolver;
 import pl.comp.model.sudoku.SudokuBoard;
-
 import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertNotSame;
-
 
 public class BackTrackingSudokuSolverTest
 {
@@ -22,7 +19,6 @@ public class BackTrackingSudokuSolverTest
         BackTrackingSudokuSolver sudoku = new BackTrackingSudokuSolver();
         sudoku.solve(sudokuBoard);
         assertEquals(true, sudokuBoard.checkBoard());
-       // sudokuBoard.display();
     }
 
     @Test
