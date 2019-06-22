@@ -4,8 +4,8 @@ This project is a Sudoku (数独 sūdoku, digit-single) game written in Java. It
 Sudoku is typical Sudoku puzzle, with nine rows and nine columns that intersect at square spaces. Some of the cells are filled with a number others are blank cells to be solved.
 
 <p align="center">
-  <img width="267" src="images/1.png">
-  <img width="267" src="images/2.png">
+  <img width="267" src="Images/1.png">
+  <img width="267" src="Images/2.png">
 </p>
 
 ## Getting Started
