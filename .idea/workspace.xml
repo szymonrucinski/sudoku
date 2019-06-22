@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="baza dziala">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="baza dziala" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
     <ignored path="$PROJECT_DIR$/View/target/" />
@@ -495,7 +485,7 @@
       <workItem from="1561110870130" duration="3351000" />
       <workItem from="1561136375901" duration="13530000" />
       <workItem from="1561187217334" duration="1950000" />
-      <workItem from="1561223470797" duration="3184000" />
+      <workItem from="1561223470797" duration="3427000" />
     </task>
     <servers />
   </component>
@@ -532,13 +522,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168196000" />
+    <option name="totallyTimeSpent" value="168439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29652777" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29652777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -547,7 +536,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32729468" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -564,7 +553,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.020833334" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.2951389" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.2951389" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.12708333" />
