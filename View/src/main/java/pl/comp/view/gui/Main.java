@@ -28,17 +28,17 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
+
 import javafx.scene.effect.DropShadow;
 //--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media
 
 
-public class Main extends Application
-{
+public class Main extends Application {
 
     ResourceBundle bundleEN = ResourceBundle.getBundle("LanguagePackPL");
     ResourceBundle bundlePL = ResourceBundle.getBundle("LanguagePack");
     private static Scene menu;
-    Button b2 ;
+    Button b2;
     Button b3;
     Button b4;
     Button b5;
@@ -48,66 +48,55 @@ public class Main extends Application
     Text difficulty;
 
     Boolean IsEnglish;
-    Boolean loadedSave=false;
+    Boolean loadedSave = false;
 
 
-
-     SudokuBoard LoadGame()
-     {
+    SudokuBoard LoadGame() {
               /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
              SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
              return SudokuLoadedFromFile;*/
 
-              SudokuBoard SudokuLoadedFromFile;
+        SudokuBoard SudokuLoadedFromFile;
 
-         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
-         try(JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku"))
-         {
-              SudokuLoadedFromFile = dao.read();
-              return SudokuLoadedFromFile;
+        SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
+        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
+            SudokuLoadedFromFile = dao.read();
+            return SudokuLoadedFromFile;
 
 
             /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
              SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
              return SudokuLoadedFromFile;*/
 
-         }
-         catch (DaoException e)
-         {
-             e.printStackTrace();
-         }
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
 
-         return new SudokuBoard();
+        return new SudokuBoard();
 
     }
 
 
-
-
-
-
     @Override
-    public void start(Stage stage) throws Exception
-    {
-         IsEnglish=false;
+    public void start(Stage stage) throws Exception {
+        IsEnglish = false;
         //MENU DESIGN//
         Pane layout = new Pane();
-        layout.setPrefSize(400,400);
+        layout.setPrefSize(400, 400);
 
         InputStream background = Files.newInputStream(Paths.get("View/src/main/resources/images/background.jpg"));
-       Image img = new Image(background);
-      background.close();
+        Image img = new Image(background);
+        background.close();
 
-       ImageView imgView = new ImageView(img);
+        ImageView imgView = new ImageView(img);
 
 
-       imgView.setFitWidth(400);
+        imgView.setFitWidth(400);
         imgView.setFitHeight(400);
         layout.getChildren().addAll(imgView);
 
         GaussianBlur blur = new GaussianBlur(5);
         imgView.setEffect(blur);
-
 
 
         Text menuText = new Text();
@@ -121,7 +110,7 @@ public class Main extends Application
         menuText.setEffect(dropShadow);
         menuText.setCache(true);
 
-         difficulty = new Text();
+        difficulty = new Text();
         difficulty.setText("Difficulty");
         difficulty.setFont(Font.font("shanghai", FontWeight.BOLD, FontPosture.REGULAR, 20));
         difficulty.setFill(Color.YELLOW);
@@ -131,7 +120,6 @@ public class Main extends Application
 
         difficulty.setEffect(dropShadow1);
         difficulty.setCache(true);
-
 
 
         languages = new Text();
@@ -146,16 +134,12 @@ public class Main extends Application
         languages.setCache(true);
 
 
-
-
-
-
         //Buttons
         b2 = new Button();
         b2.setText(bundlePL.getString("b2"));
         b2.setLayoutX(100);
         b2.setLayoutY(100);
-        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(),0,stage,menu,IsEnglish)));
+        b2.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(), 0, stage, menu, IsEnglish)));
 
         b3 = new Button();
         //language.Polish(b3,"b3");
@@ -163,7 +147,7 @@ public class Main extends Application
 
         b3.setLayoutX(156);
         b3.setLayoutY(100);
-        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(),1,stage,menu,IsEnglish)));
+        b3.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(), 1, stage, menu, IsEnglish)));
 
         b4 = new Button();
         b4.setText(bundlePL.getString("b4"));
@@ -171,7 +155,7 @@ public class Main extends Application
         //language.Polish(b4,"b4");
         b4.setLayoutX(230);
         b4.setLayoutY(100);
-        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(),2,stage,menu,IsEnglish)));
+        b4.setOnAction(e -> stage.setScene(GamingArena.GamingScene(new SudokuBoard(), 2, stage, menu, IsEnglish)));
 
         b5 = new Button();
         //language.Polish(b5,"b5");
@@ -179,8 +163,8 @@ public class Main extends Application
 
         b5.setLayoutX(130);
         b5.setLayoutY(160);
-       // b5.setOnAction(e -> language.Polish(b2,"b2"));
-        b5.setOnAction(e ->English());
+        // b5.setOnAction(e -> language.Polish(b2,"b2"));
+        b5.setOnAction(e -> English());
 
 
         b6 = new Button();
@@ -188,32 +172,33 @@ public class Main extends Application
         b6.setText(bundlePL.getString("b6"));
         b6.setLayoutX(200);
         b6.setLayoutY(160);
-        b6.setOnAction(e ->Polish());
+        b6.setOnAction(e -> Polish());
 
         b7 = new Button();
         b7.setText("LoadGame");
         b7.setLayoutX(150);
         b7.setLayoutY(210);
-       if(loadedSave==false) {b7.setText("Run Saved Game");LoadGame();}
-        b7.setOnAction(e ->stage.setScene(GamingArena.GamingScene(LoadGame(),4,stage,menu,IsEnglish)));
-
+        if (loadedSave == false) {
+            b7.setText("Run Saved Game");
+            LoadGame();
+        }
+        b7.setOnAction(e -> stage.setScene(GamingArena.GamingScene(LoadGame(), 4, stage, menu, IsEnglish)));
 
 
         {
             Button back = new Button("Back");
             back.setOnAction(f -> stage.setScene(menu));
-        };
+        }
+        ;
 
-        layout.getChildren().addAll(b2, b3, b4,menuText,b5,b6,b7,languages,difficulty);
+        layout.getChildren().addAll(b2, b3, b4, menuText, b5, b6, b7, languages, difficulty);
         //audio
         ///////////
 
-            File audioFile = new File("View/src/main/resources/music/music.wav");
-            Media audio = new Media(audioFile.toURI().toString());
-            MediaPlayer audioPlayer = new MediaPlayer(audio);
-            audioPlayer.play();
-
-
+        File audioFile = new File("View/src/main/resources/music/music.wav");
+        Media audio = new Media(audioFile.toURI().toString());
+        MediaPlayer audioPlayer = new MediaPlayer(audio);
+        audioPlayer.play();
 
 
         menu = new Scene(layout, 400, 400);
@@ -226,6 +211,7 @@ public class Main extends Application
         stage.setScene(menu);
         stage.show();
     }
+
     boolean Polish() {
 
         b2.setText(bundlePL.getString("b2"));
@@ -252,12 +238,11 @@ public class Main extends Application
         languages.setText(bundleEN.getString("languages"));
         difficulty.setText(bundleEN.getString("difficulty"));
 
-        return IsEnglish=true;
+        return IsEnglish = true;
 
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 }

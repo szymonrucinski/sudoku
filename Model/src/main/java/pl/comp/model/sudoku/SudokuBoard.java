@@ -51,14 +51,8 @@ public class SudokuBoard implements Cloneable, Serializable {
         board = Arrays.asList(sboard);
     }
 
-    @Override
-    public String toString() {
-        ToStringBuilder s = new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE);
-        for (int i = 0; i < board.size(); i++) {
-            s.append(board.get(i));
-        }
-        return s.toString();
-    }
+
+
 
     @Override
     public boolean equals(Object obj) {
@@ -152,6 +146,28 @@ public class SudokuBoard implements Cloneable, Serializable {
             cnfe.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(System.getProperty("line.separator"));
+        sb.append("-----------------").append(System.getProperty("line.separator"));
+        for (int x = 0; x < 9; x++) {
+            for (int y = 0; y < 9; y++) {
+                sb.append(board.get(x * SIZE + y).getFieldValue());
+                if ( y != 8) {
+                    sb.append(" ");
+                }
+            }
+            sb.append(System.getProperty("line.separator"));
+            if (x % 3 == 2 && x != 8) {
+                sb.append("- - - - - - - - -").append(System.getProperty("line.separator"));
+            }
+        }
+        sb.append("-----------------");
+        sb.append(System.getProperty("line.separator"));
+        return sb.toString();
     }
 
 }

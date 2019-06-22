@@ -106,9 +106,7 @@ public class FileSudokuBoardDaoTest {
             dao.write(sudokuBoard1);
             SudokuBoard sudokuBoard2 = dao.read();
             assertEquals(sudokuBoard1, sudokuBoard2);
-            sudokuBoard1.display();
-            System.out.println("------------------------");
-            sudokuBoard2.display();
+            logger.log(Level.INFO,sudokuBoard1.toString());
             dao.delete();
         } catch (DaoException e) {
             e.printStackTrace();
