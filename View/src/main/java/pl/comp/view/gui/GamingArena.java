@@ -11,14 +11,18 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import pl.comp.model.exceptions.DaoException;
+import pl.comp.model.logger.FileAndConsoleLoggerFactory;
 import pl.comp.model.sudoku.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class GamingArena
 {
+     static Logger logger = FileAndConsoleLoggerFactory.getConfiguredLogger(GamingArena.class.getName());
 
 
     public static Scene GamingScene(SudokuBoard sudokuPassed, int level, Stage stage, Scene menu,boolean IsEnglish) {
@@ -33,6 +37,7 @@ public class GamingArena
 
 
        if(level==4) {
+
            try(FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveSolution.dat"))
            {
                SudokuBoard sudokuBoardLoadSolutionFromFile =fileSudokuBoardDao.read();
@@ -190,18 +195,23 @@ public class GamingArena
 
     public static SudokuBoard saveGame (SudokuBoard sudoku,SudokuBoard solution)
     {
-        try(
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
-        ) {
-            fileSudokuBoardDao.write(sudoku);
-            sudoku.display();
-
+        //New changes
+        SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
+        try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku"))
+        {
             FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
             fileSudokuBoardDaoSolution.write(solution);
-        }
-        catch (DaoException e)
-        {
+            dao.write(sudoku);
+            solution.display();
+            System.out.println("------------------------");
+            sudoku.display();
+
+        } catch (DaoException e) {
             e.printStackTrace();
+            logger.log(Level.INFO, "ERROR WHILE READING AND WRITING");
+
+
+
         }
         return sudoku;
     }

@@ -54,11 +54,22 @@ public class Main extends Application
 
      SudokuBoard LoadGame()
      {
-         try {
-
-             FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
+              /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
              SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
-             return SudokuLoadedFromFile;
+             return SudokuLoadedFromFile;*/
+
+              SudokuBoard SudokuLoadedFromFile;
+
+         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
+         try(JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku"))
+         {
+              SudokuLoadedFromFile = dao.read();
+              return SudokuLoadedFromFile;
+
+
+            /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
+             SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
+             return SudokuLoadedFromFile;*/
 
          }
          catch (DaoException e)
