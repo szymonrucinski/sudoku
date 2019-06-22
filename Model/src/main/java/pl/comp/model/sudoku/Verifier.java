@@ -75,7 +75,6 @@ public class Verifier implements Cloneable, Serializable {
             oos.writeObject(this);
             object = baos.toByteArray();
         } catch (IOException ioe) {
-            ioe.printStackTrace();
             return null;
         }
 
@@ -84,7 +83,6 @@ public class Verifier implements Cloneable, Serializable {
 
             return ois.readObject();
         } catch (IOException | ClassNotFoundException cnfe) {
-            cnfe.printStackTrace();
             return null;
         }
 

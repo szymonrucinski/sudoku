@@ -18,6 +18,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import pl.comp.model.exceptions.DaoException;
+import pl.comp.model.logger.FileAndConsoleLoggerFactory;
 import pl.comp.model.sudoku.*;
 
 import java.io.File;
@@ -25,6 +26,8 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.scene.effect.DropShadow;
 
@@ -35,6 +38,8 @@ public class Main extends Application {
 
     ResourceBundle bundleEN = ResourceBundle.getBundle("LanguagePackPL");
     ResourceBundle bundlePL = ResourceBundle.getBundle("LanguagePack");
+    private static final Logger logger = FileAndConsoleLoggerFactory.getConfiguredLogger(Main.class.getName());
+
     private static Scene menu;
     Button b2;
     Button b3;
@@ -50,7 +55,7 @@ public class Main extends Application {
 
 
     SudokuBoard LoadGame() {
-        
+
               /* FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("saveTest.dat");
              SudokuBoard SudokuLoadedFromFile = fileSudokuBoardDao.read();
              return SudokuLoadedFromFile;*/
@@ -69,7 +74,8 @@ public class Main extends Application {
              return SudokuLoadedFromFile;*/
 
         } catch (DaoException e) {
-            e.printStackTrace();
+
+            logger.log(Level.INFO,DaoException.OPEN_ERROR);
         }
 
         return new SudokuBoard();
@@ -198,6 +204,7 @@ public class Main extends Application {
         File audioFile = new File("View/src/main/resources/music/music.wav");
         Media audio = new Media(audioFile.toURI().toString());
         MediaPlayer audioPlayer = new MediaPlayer(audio);
+        audioPlayer.setCycleCount(20);
         audioPlayer.play();
 
 

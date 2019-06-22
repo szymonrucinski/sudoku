@@ -58,10 +58,9 @@ public class FileSudokuBoardDaoTest
     public void getDatabase() {
         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
         try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
-            logger.log(Level.INFO, "Connected to DB");
 
         } catch (DaoException e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,DaoException.NO_JDBC_DRIVER);
         }
     }
 

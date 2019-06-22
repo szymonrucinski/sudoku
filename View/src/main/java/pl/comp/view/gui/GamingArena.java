@@ -41,7 +41,7 @@ public class GamingArena {
                 solution1 = sudokuBoardLoadSolutionFromFile;
                 logger.log(Level.INFO, DaoException.SAVE_LOADED);
             } catch (DaoException e) {
-                e.printStackTrace();
+                logger.log(Level.INFO,DaoException.OPEN_ERROR);
                 solution1 = new SudokuBoard();
             }
 
@@ -123,6 +123,7 @@ public class GamingArena {
             saveGame.setText(bundleEN.getString("saveGame"));
             homeButton.setText(bundleEN.getString("homeButton"));
 
+
         } else {
             verifyButton.setText(bundlePL.getString("verifyButton"));
             saveGame.setText(bundlePL.getString("saveGame"));
@@ -135,7 +136,7 @@ public class GamingArena {
         root.setCenter(grid);
         root.setBottom(controls);
         homeButton.setOnAction(e -> stage.setScene(menu));
-        verifyButton.setOnAction(e -> validate(solution, sudoku, IsEnglish));
+        verifyButton.setOnAction(e -> validate(solution,sudoku, IsEnglish));
         saveGame.setOnAction(e -> saveGame(sudoku, solution));
 
 
@@ -146,9 +147,10 @@ public class GamingArena {
     }
 
     private static void validate(SudokuBoard solution, SudokuBoard sudoku, boolean IsEnglish) {
+        String setContentText;
 
-        String setTitle = "OK";
-        String setContentText = "OK";
+        if(IsEnglish==false) setContentText = "I understand!";
+        else setContentText = "Zrozumiałem!";
 
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -157,12 +159,15 @@ public class GamingArena {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 if (sudoku.get(i, j) == solution.get(i, j)) continue;
-                else setContentText = "FAIL!";
+                else
+                    if (IsEnglish==false)setContentText = "Failure, try again!";
+                    else setContentText = "Zle, sprobuj jeszcze raz!";
 
 
             }
         }
-        alert.setTitle("BRAVO");
+        if(IsEnglish==false)alert.setTitle("Message BOX");
+        else alert.setTitle("Informacja");
         alert.setContentText(setContentText);
         alert.showAndWait();
     }
@@ -179,10 +184,7 @@ public class GamingArena {
 
 
         } catch (DaoException e) {
-            e.printStackTrace();
-            logger.log(Level.INFO, "ERROR WHILE READING AND WRITING");
-
-
+            logger.log(Level.INFO, DaoException.SAVE_ERROR);
         }
         return sudoku;
     }

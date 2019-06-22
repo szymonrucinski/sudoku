@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e6ca737-6b22-412d-bfa1-4ca48a20e748" name="Default Changelist" comment="baza dziala">
-      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/LevelDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/LevelDifficulty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/bundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuSolverTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
@@ -59,11 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="181" column="32" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+            <state relative-caret-position="270">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,10 +67,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="359" selection-end-line="486" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="40" selection-start-line="9" selection-end-line="9" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,53 +97,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log_output.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16496" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -138,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="255">
               <caret line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="240">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -173,15 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Save</find>
-      <find>SaveGame</find>
-      <find>SudokuBoard</find>
-      <find>SudokuBoards</find>
-      <find>Serializable</find>
-      <find>LoadGa</find>
-      <find>fileTo</find>
-      <find>clean</find>
-      <find>write</find>
       <find>aud</find>
       <find>default</find>
       <find>DB_URL</find>
@@ -197,12 +158,21 @@
       <find>read</find>
       <find>Syste</find>
       <find>get</find>
-      <find>logger</find>
       <find>getField</find>
       <find>Load</find>
       <find>display</find>
       <find>saveSolution</find>
       <find>saveTest</find>
+      <find>DaoEx</find>
+      <find>saveGame</find>
+      <find>DaoExcep</find>
+      <find>mediaPlayer</find>
+      <find>e.print</find>
+      <find>catch</find>
+      <find>logger</find>
+      <find>BR</find>
+      <find>validate</find>
+      <find>Message</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -240,9 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/package-info.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/Verifier.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/Client.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/BackTrackingSudokuSolver.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/LevelDifficulty.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudokuMechanism/SudokuBoard.java" />
@@ -268,19 +235,15 @@
         <option value="$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/FileSudokuBoardDao.java" />
         <option value="$PROJECT_DIR$/Model/pom.xml" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/JdbcSudokuBoardDao.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/LevelDifficulty.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoard.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBoardDaoFactory.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuBox.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuField.java" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/SudokuSolver.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/module-info.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/JdbcSudokuBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java" />
@@ -288,9 +251,16 @@
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTestAuto.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/VerifierTest.java" />
-        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Verifier.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/logger/FileAndConsoleLoggerFactory.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/FileSudokuBoardDaoTest.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java" />
+        <option value="$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java" />
       </list>
     </option>
   </component>
@@ -318,10 +288,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="33" />
-    <option name="y" value="33" />
-    <option name="width" value="1325" />
-    <option name="height" value="786" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -331,18 +299,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SudokuGameProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -537,6 +495,7 @@
       <workItem from="1561110870130" duration="3351000" />
       <workItem from="1561136375901" duration="13530000" />
       <workItem from="1561187217334" duration="1950000" />
+      <workItem from="1561223470797" duration="3184000" />
     </task>
     <servers />
   </component>
@@ -573,12 +532,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164742000" />
+    <option name="totallyTimeSpent" value="168196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29652777" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29652777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -587,7 +547,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32729468" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3031401" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -649,7 +609,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/LanguagePack.java" />
     <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GameLoader.java" />
     <entry file="file://$PROJECT_DIR$/View/src/main/resources/logging.properties" />
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/package-info.java">
@@ -687,29 +646,12 @@
     <entry file="file://$PROJECT_DIR$/Model/sudoku">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/UI.fxml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -722,30 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2333">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/SudokuException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,13 +688,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -871,9 +786,6 @@
     <entry file="file://$PROJECT_DIR$/Model/src/main/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/BackTrackingSudokuSolverTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1420">
@@ -908,26 +820,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuSolverTest.java" />
+    <entry file="file://$PROJECT_DIR$/saveSolution.dat" />
+    <entry file="file://$PROJECT_DIR$/log_output.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-17046" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log_output.log.lck" />
     <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuBoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -935,13 +835,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuSolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -959,22 +852,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saveSolution.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="181" column="32" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+        <state relative-caret-position="585">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/lvdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log_output.log">
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokSolveAndDisplayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16496" />
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/test/java/pl/comp/model/ForTest/SudokuFieldTest.java">
@@ -984,17 +893,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePackPL.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/LanguagePack.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/sudoku/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/pl/comp/model/exceptions/DaoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/exceptionMessageLanguage_pl.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/pl/comp/view/gui/GamingArena.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -14,7 +14,6 @@ public class FileAndConsoleLoggerFactory {
                 LogManager.getLogManager().readConfiguration(stream);
                 loggerConfigured = true;
             } catch (IOException e) {
-                e.printStackTrace();
             }
         }
         return Logger.getLogger(name);
