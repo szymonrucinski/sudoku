@@ -42,6 +42,7 @@ public class GamingArena
            {
                SudokuBoard sudokuBoardLoadSolutionFromFile =fileSudokuBoardDao.read();
                solution1 = sudokuBoardLoadSolutionFromFile;
+               logger.log(Level.INFO,DaoException.SAVE_LOADED);
            }
            catch (DaoException e) {
                e.printStackTrace();
@@ -178,7 +179,6 @@ public class GamingArena
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
 
-        solution.display();
         for(int i =0;i<9;i++){
             for(int j=0;j<9;j++)
             {
@@ -202,9 +202,9 @@ public class GamingArena
             FileSudokuBoardDao fileSudokuBoardDaoSolution = new FileSudokuBoardDao("saveSolution.dat");
             fileSudokuBoardDaoSolution.write(solution);
             dao.write(sudoku);
-            solution.display();
-            System.out.println("------------------------");
-            sudoku.display();
+            logger.log(Level.INFO,solution.toString());
+            logger.log(Level.INFO,sudoku.toString());
+
 
         } catch (DaoException e) {
             e.printStackTrace();

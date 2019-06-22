@@ -61,6 +61,7 @@ public class Main extends Application {
         SudokuBoardDaoFactory sudokuBoardDaoFactory = new SudokuBoardDaoFactory();
         try (JdbcSudokuBoardDao dao = (JdbcSudokuBoardDao) sudokuBoardDaoFactory.getDatabaseDao("sudoku")) {
             SudokuLoadedFromFile = dao.read();
+
             return SudokuLoadedFromFile;
 
 

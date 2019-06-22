@@ -16,6 +16,8 @@ public class DaoException extends SudokuException {
     public static final String SQL_ERROR = "sql.error";
     public static final String NO_JDBC_DRIVER = "no.JDBC.driver";
     public static final String NO_SUCH_RECORD = "no.such.record";
+    public static final String  SAVE_LOADED = "save.loaded";
+
 
     static {
         Locale locale = Locale.getDefault(Locale.Category.DISPLAY);

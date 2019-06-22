@@ -9,7 +9,6 @@ public class LevelDifficulty {
             case 2: RemoveRandomNumbers(amount,sudoku); return  sudoku;
             case 0: RemoveRandomNumbers(amount,sudoku); return sudoku;
         }
-        sudoku.display();
         return sudoku;
     }
 
@@ -34,7 +33,6 @@ public class LevelDifficulty {
     }
 
     private SudokuBoard LoadSave(SudokuBoard sudoku){
-        sudoku.display();
         return  sudoku;
     }
 

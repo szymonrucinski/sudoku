@@ -419,7 +419,7 @@ public class SudokuBoardTest
         sudoku.set(6, 0, 7);
         sudoku.set(7, 0, 8);
         sudoku.set(8, 0, 9);
-        sudoku.display();
+
     }
 
 
