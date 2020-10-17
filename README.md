@@ -27,7 +27,7 @@ $ git clone https://github.com/szymonrucinski/Sudoku.git
 
 ## How to play?
 
-Download latest release for Mac or Windows from [release page](https://github.com/szymonrucinski/Sudoku-Puzzle-Game/releases).
+Download latest release for Mac or Windows from [release page](https://github.com/szymonrucinski/Sudoku/releases).
 
 #### Windows
 Run the executable inside folder.
