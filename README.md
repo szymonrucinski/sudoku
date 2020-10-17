@@ -1,5 +1,6 @@
-# Sudoku game
-
+  <p align="center">
+    <img width="50%" src="Images/baner.png">
+  </p>
 This project is a Sudoku (数独 sūdoku, digit-single) game written in Java. It's gui was developed using JavaFX library.
 Sudoku is typical Sudoku puzzle, with nine rows and nine columns that intersect at square spaces. Some of the cells are filled with a number others are blank cells to be solved.
 
