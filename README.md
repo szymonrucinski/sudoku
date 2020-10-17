@@ -16,7 +16,7 @@ Game had been created as project for component programming by Szymon Ruciński a
 This is my first ever game/program with a Graphical User interface.
 
 
-### Installing
+## Installing
 
 Simply copy these commands in order to clone repository.
 
@@ -25,9 +25,22 @@ $ git clone https://github.com/szymonrucinski/Sudoku.git
 ```
 
 
-## Deployment
+## How to play?
 
-Add additional notes about how to deploy this on a live system
+Download latest release for Mac or Windows from [release page](https://github.com/szymonrucinski/Sudoku-Puzzle-Game/releases).
+
+#### Windows
+Run the executable inside folder.
+
+```
+double click on Sudoku.exe
+```
+#### MacOs
+Run the executable *Sudoku.sh* from terminal.
+
+```
+sh Sudoku.sh
+```
 
 ## Built With
 
@@ -37,10 +50,6 @@ Add additional notes about how to deploy this on a live system
 
 * **Szymon Ruciński** - *Whole work* - [Szymon Ruciński](https://github.com/szymonrucinski)
 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
 
