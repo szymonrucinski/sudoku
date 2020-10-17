@@ -18,6 +18,8 @@ public class DaoException extends SudokuException {
     public static final String NO_SUCH_RECORD = "no.such.record";
     public static final String  SAVE_LOADED = "save.loaded";
     public static final String  SAVE_ERROR = "save.error";
+    public static final String  ASSET_ERROR = "asset.error";
+
 
 
 

@@ -1,13 +1,15 @@
 package pl.comp.view.gui;
 
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import pl.comp.model.exceptions.DaoException;
@@ -41,7 +43,7 @@ public class GamingArena {
                 solution1 = sudokuBoardLoadSolutionFromFile;
                 logger.log(Level.INFO, DaoException.SAVE_LOADED);
             } catch (DaoException e) {
-                logger.log(Level.INFO,DaoException.OPEN_ERROR);
+                logger.log(Level.INFO, DaoException.OPEN_ERROR);
                 solution1 = new SudokuBoard();
             }
 
@@ -76,7 +78,7 @@ public class GamingArena {
                 emptyTextField.setAlignment(Pos.CENTER);
                 emptyTextField.setPrefHeight(40);
                 emptyTextField.setPrefWidth(40);
-                emptyTextField.setFont(Font.font("Helvetica", 15));
+                emptyTextField.setFont(Font.loadFont("Helvetica", 15));
                 emptyTextField.setTextFormatter(new TextFormatter<String>((TextFormatter.Change change) -> {
                     if (change.getText().matches("[0-9]*") && !(change.getControlNewText().length() > 1)) {
                         return change;
@@ -136,7 +138,7 @@ public class GamingArena {
         root.setCenter(grid);
         root.setBottom(controls);
         homeButton.setOnAction(e -> stage.setScene(menu));
-        verifyButton.setOnAction(e -> validate(solution,sudoku, IsEnglish));
+        verifyButton.setOnAction(e -> validate(solution, sudoku, IsEnglish));
         saveGame.setOnAction(e -> saveGame(sudoku, solution));
 
 
@@ -149,7 +151,7 @@ public class GamingArena {
     private static void validate(SudokuBoard solution, SudokuBoard sudoku, boolean IsEnglish) {
         String setContentText;
 
-        if(IsEnglish==false) setContentText = "I understand!";
+        if (IsEnglish == false) setContentText = "I understand!";
         else setContentText = "Zrozumiałem!";
 
 
@@ -159,14 +161,13 @@ public class GamingArena {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 if (sudoku.get(i, j) == solution.get(i, j)) continue;
-                else
-                    if (IsEnglish==false)setContentText = "Failure, try again!";
-                    else setContentText = "Zle, sprobuj jeszcze raz!";
+                else if (IsEnglish == false) setContentText = "Failure, try again!";
+                else setContentText = "Zle, sprobuj jeszcze raz!";
 
 
             }
         }
-        if(IsEnglish==false)alert.setTitle("Message BOX");
+        if (IsEnglish == false) alert.setTitle("Message BOX");
         else alert.setTitle("Informacja");
         alert.setContentText(setContentText);
         alert.showAndWait();

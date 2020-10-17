@@ -1,1 +1,8 @@
 Model/target/*
+View/target/*
+*.log
+*.iml
+Solution.dat
+Sudoku.iml
+SudokuBoards.db
+log_output.log
