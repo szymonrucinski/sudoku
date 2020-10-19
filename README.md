@@ -29,22 +29,16 @@ $ git clone https://github.com/szymonrucinski/Sudoku.git
 
 Download latest release for Mac or Windows from [release page](https://github.com/szymonrucinski/Sudoku/releases).
 
-#### Windows
-Run the executable inside folder.
+| Windows 	|  [v.1.0-win](https://github.com/szymonrucinski/Sudoku/releases/download/v.1.0-win/Sudoku-1.0-win.zip) 	| run Sudoku.bat 	|
+|---------	|---	|---	|
+| MacOs   	| [v.1.0-win](https://github.com/szymonrucinski/Sudoku/releases/download/v.1.0-mac/Sudoku-v1.0-mac.zip) 	| run Sudoku.sh 	|
 
-```
-double click on Sudoku.exe
-```
-#### MacOs
-Run the executable *Sudoku.sh* from terminal.
-
-```
-sh Sudoku.sh
-```
 
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [JavaFX](https://openjfx.io/) - GUI Library
+
 
 ## Authors
 
